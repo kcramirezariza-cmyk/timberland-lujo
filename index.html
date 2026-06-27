@@ -1,0 +1,1781 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TIMBERLAND DE LUJO – TITAN BOTAS | Calzado Industrial</title>
+<!--
+  ═══════════════════════════════════════════════
+  PON ESTAS 12 IMÁGENES EN LA MISMA CARPETA QUE ESTE HTML
+  No necesitas renombrarlas — usa los nombres exactos que ya tienen.
+  Si son .png en vez de .png, avísame y actualizo la extensión.
+  ═══════════════════════════════════════════════
+  calle-lifestyle.png     → Hombre fábrica industrial (wide)
+  durabilidad.png                    → Botas en mesa de taller
+  estilo-industrial.png                    → ¡PAGAS AL RECIBIR!
+  estilo-industrial.png                     → RESISTENCIA EXTREMA (mina)
+  oferta-principal.png                     → ¡OFERTA IMPERDIBLE! (producto)
+  versatilidad.png                     → Mujer en obra al atardecer
+  compra-segura.png                     → Imagen compuesta (features)
+  confort-detalle.png     → CONFORT ERGONÓMICO (cuello)
+  detalle-bota.png     → PIEL NUBUCK (detalle cuero)
+  traccion-detalle.png     → TRACCIÓN EXTREMA (suela)
+  detalles-grid.png     → Mujer calle urbana
+  urbano-lifestyle.png      → Hombre con taladro
+  ═══════════════════════════════════════════════
+-->
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --y:#E6B450;--y-d:#B8862E;--y-l:#F6D58A;
+  --bg:#070708;--dk:#100F0D;--card:#181610;
+  --bdr:#2C281C;--tx:#F4F1EA;--muted:#9C9486;
+  --ok:#00C851;--red:#FF3B3B;
+  --brown:#5A4420;
+}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color:var(--tx);line-height:1.6;overflow-x:hidden;
+  /* Fondo: cuero oscuro industrial con trama diagonal sutil */
+  background-color:var(--bg);
+  background-image:
+    repeating-linear-gradient(
+      -52deg,
+      rgba(230,180,80,.028) 0, rgba(230,180,80,.028) 1px,
+      transparent 1px, transparent 22px
+    ),
+    repeating-linear-gradient(
+      38deg,
+      rgba(230,180,80,.014) 0, rgba(230,180,80,.014) 1px,
+      transparent 1px, transparent 44px
+    ),
+    radial-gradient(ellipse at 50% 0%, rgba(90,70,20,.45) 0%, transparent 70%);
+}
+
+/* ── BANNER ── */
+.top-banner{background:var(--y);padding:9px 0;overflow:hidden;position:sticky;top:0;z-index:200}
+.banner-track{display:flex;animation:slide 32s linear infinite;white-space:nowrap}
+.banner-track span{display:inline-block;padding:0 36px;font-size:12px;font-weight:800;letter-spacing:.5px;color:#000}
+@keyframes slide{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ── HEADER ── */
+.header{background:var(--dk);padding:15px 20px;text-align:center;border-bottom:3px solid var(--y)}
+.brand{font-size:28px;font-weight:900;letter-spacing:5px;text-transform:uppercase;color:#fff}
+.brand span{color:var(--y)}
+.tagline{font-size:10px;color:var(--muted);letter-spacing:2.5px;text-transform:uppercase;margin-top:3px}
+
+/* ── HERO ── */
+.hero{max-width:1180px;margin:0 auto;padding:40px 20px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+@media(max-width:768px){.hero{grid-template-columns:1fr;gap:26px;padding:22px 14px}}
+
+/* Gallery */
+.main-img{background:var(--card);border-radius:16px;aspect-ratio:1;position:relative;border:1px solid var(--bdr);overflow:hidden}
+.main-img img{width:100%;height:100%;object-fit:contain;display:block;background:#111}
+.main-img .placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:var(--muted);background:linear-gradient(135deg,#161616,#222)}
+.main-img .placeholder svg{opacity:.2}
+.main-img .placeholder p{font-size:12px;opacity:.5}
+.badge-pct{position:absolute;top:13px;left:13px;background:var(--red);color:#fff;font-size:13px;font-weight:900;padding:6px 13px;border-radius:8px;z-index:2;letter-spacing:.5px}
+.thumbs{display:flex;gap:9px;margin-top:10px}
+.thumb{flex:1;aspect-ratio:1;background:var(--card);border-radius:10px;border:2px solid var(--bdr);overflow:hidden;cursor:pointer;transition:border-color .2s}
+.thumb img{width:100%;height:100%;object-fit:contain;display:block;background:#111}
+.thumb.active{border-color:var(--y)}
+.thumb .placeholder-t{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:20px;background:var(--card)}
+
+/* Info panel */
+.product-info{padding-top:4px}
+.offer-pill{display:inline-block;background:rgba(230,180,80,.12);color:var(--y);font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:5px 13px;border-radius:20px;border:1px solid rgba(230,180,80,.28);margin-bottom:12px}
+.prod-title{font-size:32px;font-weight:900;line-height:1.15;margin-bottom:6px;letter-spacing:-0.5px}
+@media(max-width:768px){.prod-title{font-size:24px}}
+.prod-sub{font-size:14px;color:var(--muted);margin-bottom:14px;line-height:1.5}
+.stars-row{display:flex;align-items:center;gap:9px;margin-bottom:18px}
+.stars{color:var(--y);font-size:18px;letter-spacing:1px}
+.rating-txt{font-size:12px;color:var(--muted)}
+.rating-txt strong{color:var(--tx)}
+
+/* Price */
+.price-box{background:var(--card);border-radius:14px;padding:18px 20px;margin-bottom:20px;border:1px solid var(--bdr)}
+.price-was{font-size:14px;color:var(--muted);text-decoration:line-through;margin-bottom:2px}
+.price-now{font-size:42px;font-weight:900;line-height:1;margin-bottom:9px;color:#fff}
+.price-save{display:inline-flex;align-items:center;gap:6px;background:rgba(0,200,81,.12);color:var(--ok);font-size:12px;font-weight:700;padding:5px 12px;border-radius:7px}
+.stock-bar{margin-top:15px}
+.stock-lbl{display:flex;justify-content:space-between;font-size:11px;margin-bottom:5px}
+.stock-warn{color:var(--y);font-weight:700}
+.track{height:5px;background:var(--bdr);border-radius:3px}
+.fill{height:100%;background:linear-gradient(90deg,var(--y),var(--y-l));border-radius:3px;width:74%}
+
+/* Countdown */
+.cdwn{background:rgba(230,180,80,.07);border:1px solid rgba(230,180,80,.22);border-radius:11px;padding:13px 18px;margin-bottom:20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.cdwn-lbl{font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:1px;flex:1;min-width:100px}
+.cdwn-timer{display:flex;gap:7px}
+.t-blk{text-align:center;background:var(--dk);border-radius:7px;padding:6px 9px;min-width:42px}
+.t-num{font-size:19px;font-weight:900;color:var(--y);line-height:1}
+.t-lbl{font-size:8px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+
+/* Sizes */
+.sz-hdr{display:flex;justify-content:space-between;align-items:center;margin-bottom:11px}
+.sz-title{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px}
+.sz-link{font-size:12px;color:var(--y);cursor:pointer;text-decoration:none;border-bottom:1px solid transparent}
+.sz-link:hover{border-color:var(--y)}
+.sz-grid{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:22px}
+.sz-btn{width:50px;height:50px;border-radius:9px;border:2px solid var(--bdr);background:var(--card);color:var(--tx);font-size:13px;font-weight:700;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center}
+.sz-btn:hover{border-color:var(--y);color:var(--y)}
+.sz-btn.sel{border-color:var(--y);background:var(--y);color:#000}
+
+/* CTA */
+.btn-main{width:100%;padding:18px;background:linear-gradient(135deg,var(--y),var(--y-d));color:#000;font-size:17px;font-weight:900;border:none;border-radius:13px;cursor:pointer;transition:all .2s;text-transform:uppercase;letter-spacing:1px;box-shadow:0 8px 24px rgba(230,180,80,.35);margin-bottom:11px}
+.btn-main:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(230,180,80,.5)}
+.btn-wa{width:100%;padding:15px;background:#25D366;color:#fff;font-size:15px;font-weight:700;border:none;border-radius:13px;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:9px;text-decoration:none}
+.btn-wa:hover{background:#20BA5C;transform:translateY(-2px)}
+.pay-note{font-size:11px;color:var(--muted);text-align:center;margin-top:10px;line-height:1.6}
+
+/* ═══ CHECKOUT PLACEHOLDER ═══
+   Descomenta este bloque y agrega tu formulario/pasarela de pago
+   cuando estés listo para integrar el checkout.
+   ══════════════════════════════ */
+/* #checkout-section { ... } */
+
+/* ── TRUST STRIP ── */
+.trust{background:var(--dk);border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr);padding:28px 20px}
+.trust-grid{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media(max-width:600px){.trust-grid{grid-template-columns:repeat(2,1fr)}}
+.ti{display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px}
+.ti-icon{width:50px;height:50px;background:rgba(230,180,80,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:23px}
+.ti-lbl{font-size:13px;font-weight:700;color:#fff}
+.ti-sub{font-size:11px;color:var(--muted)}
+
+/* ── CERTS ── */
+.certs{background:var(--card);border-bottom:1px solid var(--bdr);padding:22px 20px}
+.cert-row{max-width:1000px;margin:0 auto;display:flex;justify-content:center;flex-wrap:wrap;gap:26px}
+.cert{display:flex;align-items:center;gap:9px;font-size:12px;color:var(--muted)}
+.cert strong{color:var(--tx);display:block;font-size:13px}
+
+/* ── FEATURES ── */
+.features{max-width:1180px;margin:0 auto;padding:56px 20px}
+.sec-hdr{text-align:center;margin-bottom:36px}
+.sec-tag{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--y);margin-bottom:8px}
+.sec-title{font-size:28px;font-weight:900;line-height:1.3}
+@media(max-width:768px){.sec-title{font-size:21px}}
+.sec-sub{font-size:15px;color:var(--muted);margin-top:8px}
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:768px){.feat-grid{grid-template-columns:1fr}}
+.feat-card{background:var(--card);border:1px solid var(--bdr);border-radius:15px;padding:22px;transition:border-color .3s}
+.feat-card:hover{border-color:var(--y)}
+.feat-icon{font-size:34px;margin-bottom:12px}
+.feat-title{font-size:15px;font-weight:800;margin-bottom:7px;color:#fff}
+.feat-desc{font-size:13px;color:var(--muted);line-height:1.65}
+
+/* ── PRODUCT SHOWCASE (detail images) ── */
+.showcase-section{background:var(--dk);padding:56px 20px;border-top:1px solid var(--bdr)}
+.showcase-inner{max-width:1180px;margin:0 auto}
+.showcase-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:36px}
+@media(max-width:600px){.showcase-grid{grid-template-columns:1fr}}
+.showcase-img{border-radius:16px;overflow:hidden;aspect-ratio:4/3;position:relative}
+.showcase-img img{width:100%;height:100%;object-fit:contain;display:block;background:#111;transition:transform .4s ease}
+.showcase-img:hover img{transform:scale(1.03)}
+.showcase-img .ph{width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px}
+
+/* ── LIFESTYLE DIVIDER ── */
+.lifestyle-div{position:relative;height:480px;overflow:hidden;border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr)}
+@media(max-width:768px){.lifestyle-div{height:300px}}
+.lifestyle-div img{width:100%;height:100%;object-fit:cover;object-position:center 80%;display:block;filter:brightness(.75)}
+.lifestyle-div .ph-life{width:100%;height:100%;background:linear-gradient(135deg,#14120c,#241c0a);display:flex;align-items:center;justify-content:center;color:var(--muted)}
+.lifestyle-overlay{position:absolute;inset:0;display:flex;align-items:center;padding:0 6%;background:linear-gradient(90deg,rgba(0,0,0,.7) 40%,transparent)}
+.lifestyle-text h2{font-size:36px;font-weight:900;color:#fff;line-height:1.2;max-width:480px;margin-bottom:10px}
+@media(max-width:768px){.lifestyle-text h2{font-size:24px}}
+.lifestyle-text p{font-size:16px;color:rgba(255,255,255,.7);max-width:380px}
+
+/* ── SIZE CHART ── */
+.sz-section{background:var(--dk);padding:56px 20px;border-top:1px solid var(--bdr)}
+.sz-wrap{max-width:880px;margin:0 auto}
+.msr-guide{display:flex;gap:28px;align-items:flex-start;margin-bottom:36px}
+@media(max-width:600px){.msr-guide{flex-direction:column}}
+.msr-art{flex:0 0 190px;background:var(--card);border-radius:14px;padding:18px;text-align:center;border:1px solid var(--bdr)}
+.msr-art p{font-size:11px;color:var(--muted);margin-top:8px}
+.msr-steps{flex:1}
+.msr-steps h3{font-size:15px;font-weight:800;margin-bottom:14px;color:#fff}
+.step{display:flex;gap:13px;margin-bottom:14px;align-items:flex-start}
+.step-n{width:26px;height:26px;min-width:26px;background:var(--y);color:#000;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900}
+.step-t{font-size:13px;color:var(--muted);padding-top:3px;line-height:1.55}
+.tbl-wrap{overflow-x:auto;border-radius:14px;border:1px solid var(--bdr)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+thead tr{background:var(--y)}
+th{padding:13px 18px;text-align:center;font-weight:900;font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#000}
+td{padding:11px 18px;text-align:center;border-bottom:1px solid var(--bdr);color:var(--tx)}
+tr:last-child td{border-bottom:none}
+tr:nth-child(even) td{background:rgba(255,255,255,.02)}
+tr:hover td{background:rgba(230,180,80,.07)}
+.col-co{font-weight:900;color:var(--y);font-size:15px}
+.tbl-note{font-size:11px;color:var(--muted);text-align:center;margin-top:10px}
+
+/* ── REVIEWS ── */
+.reviews{max-width:1180px;margin:0 auto;padding:56px 20px}
+.rev-summary{display:flex;align-items:center;gap:28px;margin-bottom:36px;background:var(--card);border-radius:14px;padding:26px;border:1px solid var(--bdr)}
+@media(max-width:600px){.rev-summary{flex-direction:column;text-align:center}}
+.rev-score-num{font-size:60px;font-weight:900;line-height:1;color:#fff}
+.rev-score-stars{color:var(--y);font-size:20px}
+.rev-score-cnt{font-size:11px;color:var(--muted)}
+.rev-bars{flex:1}
+.rev-bar-row{display:flex;align-items:center;gap:9px;margin-bottom:7px}
+.rev-bar-lbl{font-size:11px;color:var(--muted);width:38px}
+.rev-bar-track{flex:1;height:5px;background:var(--bdr);border-radius:3px}
+.rev-bar-fill{height:100%;background:var(--y);border-radius:3px}
+.rev-bar-cnt{font-size:11px;color:var(--muted);width:24px;text-align:right}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:768px){.rev-grid{grid-template-columns:1fr}}
+.rev-card{background:var(--card);border:1px solid var(--bdr);border-radius:14px;padding:22px}
+.rev-hdr{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px}
+.rev-name{font-size:13px;font-weight:700;color:#fff}
+.rev-city{font-size:11px;color:var(--muted)}
+.verified{font-size:11px;color:var(--ok);display:flex;align-items:center;gap:3px}
+.rev-stars{color:var(--y);font-size:13px;margin-bottom:9px}
+.rev-txt{font-size:13px;color:var(--muted);line-height:1.7}
+
+/* ── FAQ ── */
+.faq-sec{background:var(--dk);padding:56px 20px;border-top:1px solid var(--bdr)}
+.faq-wrap{max-width:800px;margin:0 auto}
+.faq-item{border:1px solid var(--bdr);border-radius:11px;margin-bottom:9px;overflow:hidden}
+.faq-q{width:100%;background:var(--card);border:none;color:var(--tx);font-size:14px;font-weight:600;padding:17px 22px;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:background .2s}
+.faq-q:hover{background:rgba(230,180,80,.06)}
+.faq-ico{font-size:20px;color:var(--y);transition:transform .3s;flex-shrink:0}
+.faq-item.open .faq-ico{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease;background:var(--card)}
+.faq-item.open .faq-a{max-height:220px}
+.faq-a p{padding:0 22px 18px;font-size:13px;color:var(--muted);line-height:1.75}
+
+/* ── FINAL CTA ── */
+.final-cta{background:linear-gradient(135deg,#100d04,#241a06);border-top:1px solid var(--y);padding:56px 20px;text-align:center}
+.final-inner{max-width:580px;margin:0 auto}
+.final-title{font-size:30px;font-weight:900;margin-bottom:10px;color:#fff}
+@media(max-width:768px){.final-title{font-size:22px}}
+.final-sub{font-size:15px;color:var(--muted);margin-bottom:28px;line-height:1.6}
+.final-btns{display:flex;flex-direction:column;gap:11px;max-width:440px;margin:0 auto}
+.final-note{font-size:11px;color:var(--muted);margin-top:18px;line-height:1.8}
+
+/* ── STICKY BAR ── */
+.sticky{position:fixed;bottom:0;left:0;right:0;background:var(--dk);border-top:2px solid var(--y);padding:11px 18px;z-index:1000;display:none;align-items:center;gap:11px}
+@media(max-width:768px){.sticky{display:flex}}
+.sticky-price{font-size:19px;font-weight:900;color:#fff}
+.sticky-btn{flex:1;padding:13px;background:linear-gradient(135deg,var(--y),var(--y-d));color:#000;font-size:14px;font-weight:900;border:none;border-radius:11px;cursor:pointer}
+
+/* ── WA FLOAT ── */
+.wa-float{position:fixed;bottom:20px;right:20px;width:58px;height:58px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:999;box-shadow:0 4px 18px rgba(37,211,102,.48);text-decoration:none;transition:transform .2s}
+.wa-float:hover{transform:scale(1.1)}
+@media(max-width:768px){.wa-float{bottom:74px}}
+
+/* ── FOOTER ── */
+footer{background:#060606;padding:38px 20px 18px;border-top:1px solid var(--bdr)}
+.footer-inner{max-width:1180px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center}
+.footer-brand{font-size:22px;font-weight:900;letter-spacing:4px;color:#fff;text-transform:uppercase}
+.footer-brand span{color:var(--y)}
+.footer-links{display:flex;gap:26px;flex-wrap:wrap;justify-content:center}
+.footer-links a{color:var(--muted);text-decoration:none;font-size:12px;transition:color .2s}
+.footer-links a:hover{color:var(--y)}
+.footer-copy{font-size:10px;color:var(--muted)}
+
+/* ── POPUPS ── */
+.pop-overlay{position:fixed;inset:0;background:rgba(0,0,0,.82);z-index:4000;display:none;align-items:center;justify-content:center;padding:16px}
+.pop-overlay.show{display:flex;animation:popFadeIn .3s ease}
+@keyframes popFadeIn{from{opacity:0}to{opacity:1}}
+.pop-box{background:var(--dk);border:2px solid var(--y);border-radius:20px;max-width:480px;width:100%;position:relative;overflow:hidden;text-align:center}
+.pop-close{position:absolute;top:13px;right:16px;background:rgba(255,255,255,.08);border:none;color:#fff;font-size:20px;cursor:pointer;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;line-height:1;z-index:1;transition:background .2s}
+.pop-close:hover{background:rgba(255,59,59,.25);color:var(--red)}
+.pop-ribbon{background:linear-gradient(135deg,var(--y),var(--y-d));padding:10px 0;font-size:11px;font-weight:900;letter-spacing:3px;text-transform:uppercase;color:#000}
+.pop-body{padding:28px 28px 24px}
+.pop-flame{font-size:52px;line-height:1;margin-bottom:6px}
+.pop-headline{font-size:28px;font-weight:900;line-height:1.2;color:#fff;margin-bottom:8px}
+@media(max-width:480px){.pop-headline{font-size:22px}}
+.pop-headline span{color:var(--y)}
+.pop-price-old{font-size:14px;color:var(--muted);text-decoration:line-through;margin-bottom:2px}
+.pop-price{font-size:52px;font-weight:900;color:#fff;line-height:1;margin-bottom:4px}
+@media(max-width:480px){.pop-price{font-size:40px}}
+.pop-save{display:inline-block;background:rgba(0,200,81,.15);color:var(--ok);font-size:13px;font-weight:800;padding:5px 16px;border-radius:20px;margin-bottom:18px}
+.pop-bar-wrap{background:rgba(230,180,80,.07);border:1px solid rgba(230,180,80,.2);border-radius:10px;padding:11px 18px;margin-bottom:20px}
+.pop-bar-lbl{font-size:11px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px}
+.pop-bar{height:6px;background:var(--bdr);border-radius:3px}
+.pop-bar-fill{height:100%;background:linear-gradient(90deg,var(--y),var(--y-l));border-radius:3px}
+.pop-bar-pct{font-size:11px;color:var(--y);font-weight:800;margin-top:5px}
+.pop-btn-main{width:100%;padding:17px;background:linear-gradient(135deg,var(--y),var(--y-d));color:#000;font-size:16px;font-weight:900;border:none;border-radius:13px;cursor:pointer;text-transform:uppercase;letter-spacing:1px;box-shadow:0 6px 20px rgba(230,180,80,.4);margin-bottom:10px;transition:transform .2s,box-shadow .2s}
+.pop-btn-main:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(230,180,80,.55)}
+.pop-btn-skip{background:none;border:none;color:var(--muted);font-size:12px;cursor:pointer;text-decoration:underline;padding:4px;transition:color .2s}
+.pop-btn-skip:hover{color:var(--tx)}
+.pop-note{font-size:10px;color:var(--muted);margin-top:10px;line-height:1.7}
+/* Popup variante urgencia (roja) */
+.pop-box.red-variant{border-color:var(--red)}
+.pop-box.red-variant .pop-ribbon{background:linear-gradient(135deg,var(--red),#c02b2b);color:#fff}
+.pop-box.red-variant .pop-price{color:var(--y)}
+.pop-box.red-variant .pop-btn-main{background:linear-gradient(135deg,var(--red),#c02b2b);color:#fff;box-shadow:0 6px 20px rgba(255,59,59,.4)}
+.pop-box.red-variant .pop-btn-main:hover{box-shadow:0 10px 28px rgba(255,59,59,.55)}
+/* Popup variante exit (verde WA) */
+.pop-box.wa-variant{border-color:#25D366}
+.pop-box.wa-variant .pop-ribbon{background:linear-gradient(135deg,#25D366,#1da050);color:#fff}
+.pop-box.wa-variant .pop-headline span{color:#25D366}
+.pop-box.wa-variant .pop-btn-main{background:linear-gradient(135deg,#25D366,#1da050);color:#fff;box-shadow:0 6px 20px rgba(37,211,102,.4)}
+.pop-box.wa-variant .pop-btn-main:hover{box-shadow:0 10px 28px rgba(37,211,102,.55)}
+
+/* ── SCROLL ANIM ── */
+.fade{opacity:0;transform:translateY(18px);transition:all .6s ease}
+.fade.vis{opacity:1;transform:translateY(0)}
+
+/* ── GALERÍA EN ACCIÓN — cuadrícula uniforme ── */
+.accion-uniform{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:28px}
+.accion-item{border-radius:14px;overflow:hidden;aspect-ratio:1;background:#111;position:relative}
+.accion-item img{width:100%;height:100%;object-fit:contain;display:block;background:#111;transition:transform .5s ease}
+.accion-item:hover img{transform:scale(1.06)}
+@media(max-width:768px){
+  .accion-uniform{grid-template-columns:repeat(2,1fr);gap:8px}
+}
+
+/* ── ANIMACIONES ── */
+@keyframes pulse-cta{
+  0%,100%{box-shadow:0 6px 20px rgba(37,211,102,.38)}
+  50%{box-shadow:0 6px 36px rgba(37,211,102,.75),0 0 0 8px rgba(37,211,102,.10)}
+}
+@keyframes pulse-main{
+  0%,100%{box-shadow:0 8px 24px rgba(230,180,80,.38)}
+  50%{box-shadow:0 8px 40px rgba(230,180,80,.7),0 0 0 8px rgba(230,180,80,.10)}
+}
+@keyframes float-badge{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-5px)}
+}
+@keyframes shimmer-border{
+  0%{border-color:rgba(230,180,80,.25)}
+  50%{border-color:rgba(230,180,80,.75)}
+  100%{border-color:rgba(230,180,80,.25)}
+}
+@keyframes slide-in-left{
+  from{opacity:0;transform:translateX(-28px)}
+  to{opacity:1;transform:translateX(0)}
+}
+@keyframes count-pop{
+  0%{transform:scale(1)}
+  50%{transform:scale(1.15)}
+  100%{transform:scale(1)}
+}
+
+/* ── ANIMACIONES BOTONES ─────────────────────── */
+
+/* Float base */
+@keyframes btn-float{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-4px)}
+}
+
+/* Shimmer sweep → botones amarillos */
+@keyframes y-shimmer{
+  0%{background-position:160% center}
+  100%{background-position:-160% center}
+}
+.btn-main{
+  background:linear-gradient(90deg,var(--y-d) 0%,var(--y-l) 35%,#fff8 48%,var(--y-l) 55%,var(--y-d) 100%);
+  background-size:250% 100%;
+  animation:y-shimmer 2.2s linear infinite, btn-float 3s ease-in-out infinite;
+}
+
+/* Float + glow → botones WhatsApp verde */
+@keyframes wa-float{
+  0%,100%{transform:translateY(0);box-shadow:0 6px 20px rgba(37,211,102,.38)}
+  50%{transform:translateY(-4px);box-shadow:0 12px 34px rgba(37,211,102,.68)}
+}
+.btn-wa{animation:wa-float 2.5s ease-in-out infinite}
+.btn-confirm{animation:wa-float 2.5s ease-in-out infinite .3s}
+
+/* Heartbeat → botón flotante WhatsApp */
+@keyframes heartbeat{
+  0%,100%{transform:scale(1)}
+  12%{transform:scale(1.12)}
+  24%{transform:scale(1)}
+  36%{transform:scale(1.1)}
+  48%{transform:scale(1)}
+}
+.wa-float{animation:heartbeat 2.6s ease-in-out infinite}
+
+/* Glow pulsante → sticky bar botones */
+@keyframes sticky-glow{
+  0%,100%{box-shadow:0 0 0 0 rgba(230,180,80,.45)}
+  50%{box-shadow:0 0 0 7px rgba(230,180,80,0)}
+}
+.sticky-btn{animation:sticky-glow 2s ease-in-out infinite}
+
+/* Float → popups CTA */
+.pop-btn-main{animation:btn-float 2.3s ease-in-out infinite}
+
+/* Wiggle al hover → botones de talla */
+@keyframes sz-wiggle{
+  0%{transform:scale(1) rotate(0)}
+  30%{transform:scale(1.2) rotate(-5deg)}
+  60%{transform:scale(1.15) rotate(5deg)}
+  100%{transform:scale(1.1) rotate(0)}
+}
+.sz-btn:hover:not(.sel){animation:sz-wiggle .32s ease-in-out forwards}
+
+/* Press al click → todos los botones */
+button:active{transform:scale(.94)!important;transition:transform .08s!important}
+a.btn-wa:active,.wa-float:active{transform:scale(.94)!important;transition:transform .08s!important}
+
+/* Badge -29% sigue flotando */
+.badge-pct{animation:float-badge 2.4s ease-in-out infinite}
+
+/* Borde shimmer → precio y countdown */
+.price-box{animation:shimmer-border 3s ease-in-out infinite}
+.cdwn{animation:shimmer-border 3.4s ease-in-out infinite .4s}
+
+/* Stagger para grillas — asignado vía JS */
+.fade{transition:opacity .55s ease,transform .55s ease}
+
+/* Parallax wrapper lifestyle */
+.lifestyle-div{overflow:hidden}
+.lifestyle-div img{will-change:transform;transition:none}
+
+/* ══════════════════════════════════════
+   MOBILE OPTIMIZATIONS
+   ══════════════════════════════════════ */
+/* Touch feel */
+button,a{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+
+/* En acción grids (clases añadidas en HTML) */
+.accion-3col{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+.accion-2col{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+.accion-banner{margin-top:14px;border-radius:16px;overflow:hidden;aspect-ratio:21/9;background:var(--card);border:1px solid var(--bdr)}
+
+@media(max-width:768px){
+  /* ── Header ajustado a mobile */
+  .header{padding:12px 60px 12px 16px}
+  .brand{font-size:20px;letter-spacing:3px;text-align:left}
+  .tagline{font-size:9px;text-align:left}
+  .cart-icon-btn{padding:7px 11px;font-size:12px;right:12px;border-radius:8px}
+
+  /* ── Hero */
+  .main-img{aspect-ratio:4/3}
+  .sz-btn{width:46px;height:46px;font-size:13px}
+
+  /* ── En acción: 1 columna en móvil */
+  .accion-3col{grid-template-columns:1fr!important}
+  .accion-2col{grid-template-columns:1fr!important}
+  .accion-banner{aspect-ratio:4/3!important}
+
+  /* ── Product showcase: ya tiene media query en 600px ── */
+
+  /* ── Cart drawer: sube desde abajo en móvil */
+  .cart-drawer{max-width:100%;border-left:none;border-top:2px solid var(--y);border-radius:20px 20px 0 0;top:auto;height:92dvh;transform:translateY(100%)}
+  .cart-drawer.open{transform:translateY(0)}
+  .cart-hdr{padding:16px 20px}
+  .cart-ftr{padding:16px 20px}
+  .cart-body{padding:12px}
+
+  /* ── Popup mobile */
+  .pop-overlay{padding:10px}
+  .pop-body{padding:18px 16px 16px}
+  .pop-flame{font-size:36px}
+  .pop-headline{font-size:19px!important;margin-bottom:6px}
+  .pop-price{font-size:36px!important}
+  .pop-price-old{font-size:13px}
+  .pop-save{font-size:12px;padding:4px 12px}
+  .pop-bar-wrap{padding:9px 14px;margin-bottom:14px}
+  .pop-btn-main{padding:15px;font-size:15px}
+  .pop-note{font-size:10px;margin-top:8px}
+  .pop-ribbon{font-size:10px;letter-spacing:2px}
+
+  /* ── FAQ respuestas más altas en móvil */
+  .faq-item.open .faq-a{max-height:320px}
+
+  /* ── Cert row: 2 por fila */
+  .cert-row{gap:16px}
+  .cert{flex:0 0 calc(50% - 8px)}
+
+  /* ── Features: 1 columna — ya cubierta con la media query existente */
+
+  /* ── Size chart guide: apilado */
+  .msr-art{flex:0 0 auto;width:100%;text-align:center}
+
+  /* ── Review summary: columna centrada */
+  .rev-score-num{font-size:46px}
+
+  /* ── Final CTA */
+  .final-title{font-size:20px!important}
+  .final-btns{max-width:100%}
+
+  /* ── Lifestyle divider texto */
+  .lifestyle-overlay{padding:0 5%}
+}
+
+@media(max-width:390px){
+  /* Pantallas muy pequeñas (iPhone SE, etc.) */
+  .prod-title{font-size:20px}
+  .price-now{font-size:34px}
+  .sz-btn{width:42px;height:42px;font-size:12px}
+  .pop-headline{font-size:17px!important}
+  .pop-price{font-size:30px!important}
+  .brand{font-size:18px}
+}
+
+/* ── CART ── */
+.header{position:relative}
+.cart-icon-btn{position:absolute;top:50%;right:18px;transform:translateY(-50%);background:rgba(230,180,80,.12);border:1px solid rgba(230,180,80,.3);border-radius:10px;padding:8px 14px;cursor:pointer;display:flex;align-items:center;gap:7px;color:#fff;font-size:13px;font-weight:700;transition:background .2s}
+.cart-icon-btn:hover{background:rgba(230,180,80,.22)}
+.cart-badge{background:var(--y);color:#000;border-radius:50%;width:18px;height:18px;font-size:10px;font-weight:900;display:none;align-items:center;justify-content:center;line-height:1}
+.btn-cart{width:100%;padding:18px;background:linear-gradient(135deg,var(--y),var(--y-d));color:#000;font-size:17px;font-weight:900;border:none;border-radius:13px;cursor:pointer;transition:all .2s;text-transform:uppercase;letter-spacing:1px;box-shadow:0 8px 24px rgba(230,180,80,.35);margin-bottom:11px}
+.btn-cart:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(230,180,80,.5)}
+.btn-outline{width:100%;padding:14px;background:transparent;border:2px solid rgba(255,255,255,.15);color:var(--muted);font-size:14px;font-weight:700;border-radius:13px;cursor:pointer;transition:all .2s;margin-bottom:11px}
+.btn-outline:hover{border-color:var(--y);color:var(--y)}
+.cart-overlay{position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:1999;opacity:0;pointer-events:none;transition:opacity .3s}
+.cart-overlay.open{opacity:1;pointer-events:all}
+.cart-drawer{position:fixed;top:0;right:0;bottom:0;width:100%;max-width:420px;background:var(--dk);z-index:2000;transform:translateX(100%);transition:transform .35s ease;display:flex;flex-direction:column;border-left:1px solid var(--bdr)}
+.cart-drawer.open{transform:translateX(0)}
+.cart-hdr{display:flex;justify-content:space-between;align-items:center;padding:20px 24px;border-bottom:1px solid var(--bdr)}
+.cart-hdr h3{font-size:18px;font-weight:800;color:#fff}
+.cart-close-btn{background:none;border:none;color:var(--muted);font-size:24px;cursor:pointer;line-height:1;padding:0 4px}
+.cart-close-btn:hover{color:#fff}
+.cart-body{flex:1;overflow-y:auto;padding:16px}
+.cart-empty-msg{text-align:center;color:var(--muted);padding:50px 0;font-size:14px}
+.cart-item{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;background:var(--card);border-radius:12px;border:1px solid var(--bdr);margin-bottom:10px;gap:12px}
+.cart-item-l{flex:1}
+.cart-sz{display:block;font-size:16px;font-weight:800;color:#fff}
+.cart-pname{font-size:11px;color:var(--muted)}
+.cart-item-r{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.qty-ctrl{display:flex;align-items:center;background:var(--bg);border-radius:8px;border:1px solid var(--bdr);overflow:hidden}
+.qty-ctrl button{background:none;border:none;color:var(--y);font-size:19px;font-weight:700;cursor:pointer;padding:3px 10px;line-height:1;transition:background .15s}
+.qty-ctrl button:hover{background:rgba(230,180,80,.1)}
+.qty-ctrl span{font-size:14px;font-weight:700;color:#fff;padding:0 6px;min-width:22px;text-align:center}
+.cart-itm-price{font-size:13px;font-weight:800;color:var(--y);white-space:nowrap}
+.cart-rm{background:none;border:none;color:var(--muted);font-size:15px;cursor:pointer;padding:3px 5px;line-height:1;border-radius:5px;transition:all .15s}
+.cart-rm:hover{color:var(--red);background:rgba(255,59,59,.1)}
+.cart-ftr{padding:20px 24px;border-top:1px solid var(--bdr)}
+.cart-total-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.cart-total-lbl{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+.cart-total-val{font-size:26px;font-weight:900;color:#fff}
+.btn-checkout{width:100%;padding:16px;background:#25D366;color:#fff;font-size:15px;font-weight:800;border:none;border-radius:13px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:9px;transition:background .2s}
+.btn-checkout:hover{background:#20BA5C}
+.cart-ftr-note{font-size:11px;color:var(--muted);text-align:center;margin-top:9px}
+.toast{position:fixed;bottom:110px;left:50%;transform:translateX(-50%) translateY(12px);background:#1a1a1a;border:1px solid var(--y);color:#fff;padding:11px 22px;border-radius:10px;font-size:13px;font-weight:700;opacity:0;pointer-events:none;transition:all .3s;z-index:3000;white-space:nowrap}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* ── CART PANELS ── */
+.cart-panel{display:flex;flex-direction:column;height:100%}
+.cart-panel.hidden{display:none}
+.cart-back-btn{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);color:#fff;width:34px;height:34px;border-radius:9px;font-size:17px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s}
+.cart-back-btn:hover{background:rgba(255,255,255,.18)}
+.cart-step-tag{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:1.5px;font-weight:700}
+
+/* ── ORDER FORM ── */
+.form-scroll{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:4px}
+.form-summary{background:rgba(230,180,80,.07);border:1px solid rgba(230,180,80,.2);border-radius:11px;padding:12px 15px;margin-bottom:14px}
+.form-summary-title{font-size:10px;color:var(--y);font-weight:800;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:8px}
+.form-summary-line{font-size:13px;color:var(--tx);margin-bottom:3px}
+.form-summary-total{font-size:16px;font-weight:900;color:#fff;margin-top:8px;padding-top:8px;border-top:1px solid rgba(230,180,80,.2)}
+.form-section-lbl{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--y);margin:14px 0 10px}
+.form-field{display:flex;flex-direction:column;gap:5px;margin-bottom:10px}
+.form-field label{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.8px}
+.form-field label span{color:var(--red);margin-left:2px}
+.form-input{width:100%;background:var(--bg);border:1.5px solid var(--bdr);border-radius:11px;padding:13px 15px;color:var(--tx);font-size:15px;font-family:inherit;outline:none;transition:border-color .2s;-webkit-appearance:none;appearance:none}
+.form-input:focus{border-color:var(--y)}
+.form-input::placeholder{color:#4a4a4a;font-size:14px}
+textarea.form-input{resize:none;min-height:70px;line-height:1.5}
+.form-req-note{font-size:10px;color:var(--muted);margin-top:2px;padding-bottom:8px}
+.btn-confirm{width:100%;padding:17px;background:#25D366;color:#fff;font-size:16px;font-weight:900;border:none;border-radius:13px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:9px;transition:background .2s;box-shadow:0 6px 20px rgba(37,211,102,.35)}
+.btn-confirm:hover{background:#20BA5C;box-shadow:0 10px 28px rgba(37,211,102,.5)}
+.btn-confirm:active{transform:scale(.98)}
+@media(max-width:768px){
+  .form-input{font-size:16px;padding:14px 15px} /* 16px evita zoom en iOS */
+}
+</style>
+</head>
+<body>
+
+<!-- ── BANNER ── -->
+<div class="top-banner">
+  <div class="banner-track">
+    <span>🚚 ENVÍO GRATIS A TODO COLOMBIA</span>
+    <span>💵 PAGAS AL RECIBIR · CONTRAENTREGA</span>
+    <span>🛡️ GARANTÍA 3 MESES</span>
+    <span>⚙️ CALIDAD INDUSTRIAL CERTIFICADA</span>
+    <span>🔒 COMPRA 100% SEGURA</span>
+    <span>📦 DESPACHO EN 24-48 HORAS</span>
+    <span>🚚 ENVÍO GRATIS A TODO COLOMBIA</span>
+    <span>💵 PAGAS AL RECIBIR · CONTRAENTREGA</span>
+    <span>🛡️ GARANTÍA 3 MESES</span>
+    <span>⚙️ CALIDAD INDUSTRIAL CERTIFICADA</span>
+    <span>🔒 COMPRA 100% SEGURA</span>
+    <span>📦 DESPACHO EN 24-48 HORAS</span>
+  </div>
+</div>
+
+<!-- ── HEADER ── -->
+<header class="header">
+  <div class="brand">TITAN <span>BOTAS</span></div>
+  <div class="tagline">Calzado industrial de alto rendimiento · Colombia</div>
+  <button class="cart-icon-btn" onclick="document.getElementById('pedidoForm').scrollIntoView({behavior:'smooth'})">
+    📋 Pedir ahora
+  </button>
+</header>
+
+<!-- ── HERO ── -->
+<section>
+  <div class="hero">
+
+    <!-- GALLERY -->
+    <div class="fade">
+      <div class="main-img" id="mainImg">
+        <div class="badge-pct">-29%</div>
+        <img src="oferta-principal.png" alt="TIMBERLAND DE LUJO" id="activeImg" onerror="this.style.display='none';document.getElementById('ph-main').style.display='flex'">
+        <div class="placeholder" id="ph-main" style="display:none">
+          <svg width="100" height="100" viewBox="0 0 100 80" fill="none">
+            <path d="M10 70 L10 35 Q10 22 22 22 L52 22 L52 40 Q52 52 62 52 L86 52 Q92 52 92 58 L92 70 Q92 76 86 76 L16 76 Q10 76 10 70Z" fill="#E6B450" opacity="0.15" stroke="#E6B450" stroke-width="1.8"/>
+            <path d="M22 22 L22 42 M32 22 L32 46 M42 22 L42 48" stroke="#E6B450" stroke-width="1.3" opacity="0.3"/>
+            <path d="M10 62 L92 62" stroke="#E6B450" stroke-width="1.8" opacity="0.4"/>
+          </svg>
+          <p>Guarda confort-detalle.png en esta carpeta</p>
+        </div>
+      </div>
+      <div class="thumbs">
+        <div class="thumb active" onclick="selThumb(0)">
+          <img src="oferta-principal.png" alt="Vista 1" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'placeholder-t\'>1</div>'">
+        </div>
+        <div class="thumb" onclick="selThumb(1)">
+          <img src="calle-lifestyle.png" alt="Vista 2" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'placeholder-t\'>2</div>'">
+        </div>
+        <div class="thumb" onclick="selThumb(2)">
+          <img src="durabilidad.png" alt="Vista 3" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'placeholder-t\'>3</div>'">
+        </div>
+        <div class="thumb" onclick="selThumb(3)">
+          <img src="urbano-lifestyle.png" alt="Vista 4" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'placeholder-t\'>4</div>'">
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="product-info fade">
+      <div class="offer-pill">🔥 Oferta de hoy</div>
+      <h1 class="prod-title">TIMBERLAND DE LUJO</h1>
+      <p class="prod-sub">Piel Nubuck genuina · Tracción All-Terrain · Resistencia extrema · Para trabajos de alto exigencia</p>
+
+      <div class="stars-row">
+        <span class="stars">★★★★★</span>
+        <span class="rating-txt"><strong>4.9</strong> / 5.0 · <strong>386</strong> reseñas verificadas</span>
+      </div>
+
+      <div class="price-box">
+        <div class="price-was">Precio normal: $225.000</div>
+        <div class="price-now">$160.000</div>
+        <div class="price-save">✓ &nbsp;Ahorras $65.000 hoy</div>
+        <div class="stock-bar">
+          <div class="stock-lbl">
+            <span class="stock-warn">⚡ ¡Pocas unidades disponibles!</span>
+            <span style="color:var(--muted)">74% vendido</span>
+          </div>
+          <div class="track"><div class="fill"></div></div>
+        </div>
+      </div>
+
+      <div class="cdwn">
+        <div class="cdwn-lbl">⏰ Precio especial termina en:</div>
+        <div class="cdwn-timer">
+          <div class="t-blk"><div class="t-num" id="hrs">05</div><div class="t-lbl">hrs</div></div>
+          <div class="t-blk"><div class="t-num" id="mns">42</div><div class="t-lbl">min</div></div>
+          <div class="t-blk"><div class="t-num" id="scs">18</div><div class="t-lbl">seg</div></div>
+        </div>
+      </div>
+
+      <div class="sz-hdr">
+        <span class="sz-title">Selecciona tu talla</span>
+        <a class="sz-link" onclick="goToSizes()">📏 Ver guía de tallas</a>
+      </div>
+      <div class="sz-grid">
+        <button class="sz-btn" onclick="pickSz(this)">37</button>
+        <button class="sz-btn" onclick="pickSz(this)">38</button>
+        <button class="sz-btn" onclick="pickSz(this)">39</button>
+        <button class="sz-btn" onclick="pickSz(this)">40</button>
+        <button class="sz-btn" onclick="pickSz(this)">41</button>
+        <button class="sz-btn" onclick="pickSz(this)">42</button>
+        <button class="sz-btn" onclick="pickSz(this)">43</button>
+        <button class="sz-btn" onclick="pickSz(this)">44</button>
+      </div>
+
+      <button class="btn-main" onclick="document.getElementById('pedidoForm').scrollIntoView({behavior:'smooth'})">📋 HACER MI PEDIDO AHORA</button>
+      <a class="btn-wa" href="javascript:doOrder()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Comprar directo por WhatsApp
+      </a>
+      <div class="pay-note">🔒 Compra 100% segura &nbsp;·&nbsp; 💵 Contraentrega &nbsp;·&nbsp; 📦 Envío gratis</div>
+
+      <!-- ══════════════════════════════════════════
+           ESPACIO PARA CHECKOUT / PASARELA DE PAGO
+           Descomenta y reemplaza con tu integración
+           ══════════════════════════════════════════
+      <div id="checkout-section" style="margin-top:20px">
+        AQUÍ VA TU FORMULARIO O LINK DE PAGO
+      </div>
+      ══════════════════════════════════════════ -->
+    </div>
+  </div>
+</section>
+
+<!-- ── TRUST ── -->
+<div class="trust">
+  <div class="trust-grid">
+    <div class="ti fade"><div class="ti-icon">🚚</div><div class="ti-lbl">Envío Gratis</div><div class="ti-sub">A todo Colombia</div></div>
+    <div class="ti fade"><div class="ti-icon">💵</div><div class="ti-lbl">Paga al Recibir</div><div class="ti-sub">Sin riesgo, sin adelantos</div></div>
+    <div class="ti fade"><div class="ti-icon">🛡️</div><div class="ti-lbl">Garantía 3 Meses</div><div class="ti-sub">Defectos de fábrica</div></div>
+    <div class="ti fade"><div class="ti-icon">⚡</div><div class="ti-lbl">Despacho Rápido</div><div class="ti-sub">24-48 horas hábiles</div></div>
+  </div>
+</div>
+
+<!-- ── CERTS ── -->
+<div class="certs">
+  <div class="cert-row">
+    <div class="cert"><span style="font-size:22px">⚙️</span><div><strong>NTC 1741</strong>Norma ICONTEC</div></div>
+    <div class="cert"><span style="font-size:22px">🦾</span><div><strong>Punta Reforzada</strong>Alta resistencia</div></div>
+    <div class="cert"><span style="font-size:22px">💧</span><div><strong>Resistente al agua</strong>Grado industrial</div></div>
+    <div class="cert"><span style="font-size:22px">🌍</span><div><strong>All-Terrain</strong>Todo tipo de terreno</div></div>
+    <div class="cert"><span style="font-size:22px">🧵</span><div><strong>Costuras Triples</strong>Alta resistencia</div></div>
+  </div>
+</div>
+
+<!-- ── FEATURES ── -->
+<section class="features">
+  <div class="sec-hdr fade">
+    <div class="sec-tag">⚙️ Características del calzado</div>
+    <h2 class="sec-title">Ingenierada para no rendirse</h2>
+    <p class="sec-sub">Cada detalle de la TIMBERLAND DE LUJO fue diseñado para el trabajo más exigente</p>
+  </div>
+  <div class="feat-grid">
+    <div class="feat-card fade">
+      <div class="feat-icon">🪵</div>
+      <h3 class="feat-title">Piel Nubuck de Primera Calidad</h3>
+      <p class="feat-desc">Cuero genuino nubuck suave y resistente. Puntera y talón reforzados con costuras triples de alta resistencia para máxima durabilidad.</p>
+    </div>
+    <div class="feat-card fade">
+      <div class="feat-icon">☁️</div>
+      <h3 class="feat-title">Confort Ergonómico Urbano</h3>
+      <p class="feat-desc">Cuello de lona acolchado para ajuste suave. Forro interior transpirable y amortiguación superior para uso todo el día.</p>
+    </div>
+    <div class="feat-card fade">
+      <div class="feat-icon">⛰️</div>
+      <h3 class="feat-title">Tracción Extrema All-Terrain</h3>
+      <p class="feat-desc">Tacos profundos de goma autolimpiantes. Agarre superior en barro, roca y superficies urbanas húmedas. Sin resbalones.</p>
+    </div>
+    <div class="feat-card fade">
+      <div class="feat-icon">💪</div>
+      <h3 class="feat-title">Resistencia Extrema</h3>
+      <p class="feat-desc">Diseñada para conquistar cualquier terreno. Desde obras de construcción hasta minas y plantas industriales de alto tráfico.</p>
+    </div>
+    <div class="feat-card fade">
+      <div class="feat-icon">💧</div>
+      <h3 class="feat-title">Materiales Resistentes al Agua</h3>
+      <p class="feat-desc">Protección contra la humedad y el desgaste prematuro. Mantiene su forma y rendimiento en condiciones climáticas adversas.</p>
+    </div>
+    <div class="feat-card fade">
+      <div class="feat-icon">🚜</div>
+      <h3 class="feat-title">Fuerza de Tractor en tu Pie</h3>
+      <p class="feat-desc">Logo CAT icónico y certificado. La potencia y confianza de la marca más reconocida en maquinaria industrial, ahora en tu calzado.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── PRODUCT SHOWCASE ── -->
+<section class="showcase-section">
+  <div class="showcase-inner">
+    <div class="sec-hdr fade">
+      <div class="sec-tag">📸 Detalle del producto</div>
+      <h2 class="sec-title">Cada parte diseñada con propósito</h2>
+      <p class="sec-sub">Calidad visible en cada costura, cada material, cada centímetro</p>
+    </div>
+    <div class="showcase-grid fade">
+      <div class="showcase-img">
+        <img src="confort-detalle.png" alt="Confort Ergonómico - cuello acolchado" loading="lazy" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'ph\'>Confort Ergonómico</div>'">
+      </div>
+      <div class="showcase-img">
+        <img src="traccion-detalle.png" alt="Tracción Extrema - suela" loading="lazy" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'ph\'>Tracción Extrema</div>'">
+      </div>
+      <div class="showcase-img">
+        <img src="detalle-bota.png" alt="Piel Nubuck primera calidad" loading="lazy" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'ph\'>Piel Nubuck</div>'">
+      </div>
+      <div class="showcase-img">
+        <img src="estilo-industrial.png" alt="Resistencia extrema cualquier terreno" loading="lazy" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'ph\'>Resistencia Extrema</div>'">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── LIFESTYLE DIVIDER ── -->
+<div class="lifestyle-div">
+  <img src="calle-lifestyle.png" alt="TIMBERLAND DE LUJO en planta industrial" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.ph-life').style.display='flex'">
+  <div class="ph-life" style="display:none">calle-lifestyle.png — Hombre fábrica industrial</div>
+  <div class="lifestyle-overlay">
+    <div class="lifestyle-text">
+      <h2>Hecho para los que no paran.</h2>
+      <p>Desde la obra hasta la planta. Fuerza y comodidad en cada turno.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ── EN ACCIÓN ── -->
+<section style="background:var(--bg);padding:56px 20px;border-top:1px solid var(--bdr)">
+  <div style="max-width:1180px;margin:0 auto">
+    <div class="sec-hdr fade">
+      <div class="sec-tag">📸 En acción</div>
+      <h2 class="sec-title">Fuerza y versatilidad en cada paso</h2>
+      <p class="sec-sub">Para la obra, la planta y la calle — una sola bota lo hace todo</p>
+    </div>
+    <div class="accion-uniform">
+      <div class="accion-item fade"><img src="detalles-grid.png"          alt="Versatilidad urbana"    loading="lazy" onerror="this.style.display='none'"></div>
+      <div class="accion-item fade"><img src="versatilidad.png"                          alt="Mujer en obra"         loading="lazy" onerror="this.style.display='none'"></div>
+      <div class="accion-item fade"><img src="urbano-lifestyle.png"           alt="Hombre con taladro"    loading="lazy" onerror="this.style.display='none'"></div>
+      <div class="accion-item fade"><img src="compra-segura.png"                          alt="Características bota"  loading="lazy" onerror="this.style.display='none'"></div>
+      <div class="accion-item fade"><img src="estilo-industrial.png"                         alt="Pagas al recibir"      loading="lazy" onerror="this.style.display='none'"></div>
+      <div class="accion-item fade"><img src="calle-lifestyle.png"           alt="TIMBERLAND DE LUJO en obra"   loading="lazy" onerror="this.style.display='none'"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── VIDEO ── -->
+<section style="background:var(--dk);padding:56px 20px;border-top:1px solid var(--bdr)">
+  <div style="max-width:900px;margin:0 auto">
+    <div class="sec-hdr fade">
+      <div class="sec-tag">🎬 Ve el producto en acción</div>
+      <h2 class="sec-title">Fuerza real. Sin filtros.</h2>
+      <p class="sec-sub">Mírala de cerca — la calidad que no se puede describir, solo ver</p>
+    </div>
+    <div class="fade" style="margin-top:28px;border-radius:20px;overflow:hidden;border:2px solid var(--bdr);background:#000;box-shadow:0 24px 64px rgba(0,0,0,.6)">
+      <video
+        src="video.mp4"
+        controls
+        muted
+        playsinline
+        preload="metadata"
+        style="width:100%;display:block;max-height:620px;object-fit:contain;background:#000"
+      >
+        Tu navegador no soporta reproducción de video.
+      </video>
+    </div>
+    <div style="text-align:center;margin-top:24px">
+      <button class="btn-main" style="max-width:400px;margin:0 auto" onclick="document.getElementById('pedidoForm').scrollIntoView({behavior:'smooth'})">📋 HACER MI PEDIDO AHORA</button>
+    </div>
+  </div>
+</section>
+
+<!-- ── SIZE CHART ── -->
+<section class="sz-section" id="sizeChart">
+  <div class="sz-wrap">
+    <div class="sec-hdr fade">
+      <div class="sec-tag">📏 Guía de tallas</div>
+      <h2 class="sec-title">Encuentra tu talla perfecta</h2>
+      <p class="sec-sub">Mide tu pie con calcetines de trabajo para mayor precisión</p>
+    </div>
+
+    <div class="msr-guide fade">
+      <div class="msr-art">
+        <svg viewBox="0 0 130 190" xmlns="http://www.w3.org/2000/svg" width="130" height="190">
+          <path d="M42 170 Q24 160 20 132 Q16 104 26 74 Q36 44 50 30 Q60 20 70 20 Q80 20 83 30 Q90 46 85 74 L80 112 Q85 132 83 152 Q80 166 70 170 Z" fill="rgba(230,180,80,0.1)" stroke="#E6B450" stroke-width="1.8"/>
+          <line x1="100" y1="20" x2="100" y2="170" stroke="#E6B450" stroke-width="1.4" stroke-dasharray="4,3"/>
+          <polygon points="100,20 96,34 104,34" fill="#E6B450"/>
+          <polygon points="100,170 96,156 104,156" fill="#E6B450"/>
+          <text x="107" y="100" fill="#E6B450" font-size="9" text-anchor="start">Largo</text>
+          <text x="107" y="112" fill="#E6B450" font-size="9" text-anchor="start">del pie</text>
+        </svg>
+        <p>Mide el largo total desde el talón hasta el dedo más largo</p>
+      </div>
+      <div class="msr-steps">
+        <h3>¿Cómo medir tu pie?</h3>
+        <div class="step"><div class="step-n">1</div><div class="step-t">Pon una hoja en el piso y apoya tu pie, con el talón contra la pared.</div></div>
+        <div class="step"><div class="step-n">2</div><div class="step-t">Marca el punto más largo de tu dedo (gordo o segundo dedo).</div></div>
+        <div class="step"><div class="step-n">3</div><div class="step-t">Mide de la pared a la marca — esa es la longitud en centímetros.</div></div>
+        <div class="step"><div class="step-n">4</div><div class="step-t">Si estás entre dos tallas, elige la <strong style="color:var(--y)">más grande</strong>: el calzado industrial va con calcetines gruesos.</div></div>
+      </div>
+    </div>
+
+    <div class="tbl-wrap fade">
+      <table>
+        <thead>
+          <tr>
+            <th>Talla Colombia</th>
+            <th>US — Hombre</th>
+            <th>US — Mujer</th>
+            <th>Longitud del pie (cm)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="col-co">37</td><td>4½</td><td>6</td><td>23.0 cm</td></tr>
+          <tr><td class="col-co">38</td><td>5½</td><td>7</td><td>23.5 cm</td></tr>
+          <tr><td class="col-co">39</td><td>6</td><td>7½</td><td>24.0 cm</td></tr>
+          <tr><td class="col-co">40</td><td>7</td><td>8½</td><td>25.0 cm</td></tr>
+          <tr><td class="col-co">41</td><td>7½</td><td>9</td><td>25.5 cm</td></tr>
+          <tr><td class="col-co">42</td><td>8½</td><td>10</td><td>26.0 cm</td></tr>
+          <tr><td class="col-co">43</td><td>9½</td><td>11</td><td>27.0 cm</td></tr>
+          <tr><td class="col-co">44</td><td>10</td><td>11½</td><td>27.5 cm</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tbl-note">💡 Recomendamos medir al final del día cuando el pie está más expandido.</p>
+  </div>
+</section>
+
+<!-- ── REVIEWS ── -->
+<section class="reviews">
+  <div class="sec-hdr fade">
+    <div class="sec-tag">⭐ Reseñas verificadas</div>
+    <h2 class="sec-title">Lo que dicen quienes ya las usan</h2>
+  </div>
+  <div class="rev-summary fade">
+    <div>
+      <div class="rev-score-num">4.9</div>
+      <div class="rev-score-stars">★★★★★</div>
+      <div class="rev-score-cnt"><span data-count="386">386</span> reseñas verificadas</div>
+    </div>
+    <div class="rev-bars">
+      <div class="rev-bar-row"><span class="rev-bar-lbl">5 ★</span><div class="rev-bar-track"><div class="rev-bar-fill" style="width:89%"></div></div><span class="rev-bar-cnt">344</span></div>
+      <div class="rev-bar-row"><span class="rev-bar-lbl">4 ★</span><div class="rev-bar-track"><div class="rev-bar-fill" style="width:7%"></div></div><span class="rev-bar-cnt">27</span></div>
+      <div class="rev-bar-row"><span class="rev-bar-lbl">3 ★</span><div class="rev-bar-track"><div class="rev-bar-fill" style="width:2%"></div></div><span class="rev-bar-cnt">9</span></div>
+      <div class="rev-bar-row"><span class="rev-bar-lbl">2 ★</span><div class="rev-bar-track"><div class="rev-bar-fill" style="width:1%"></div></div><span class="rev-bar-cnt">4</span></div>
+      <div class="rev-bar-row"><span class="rev-bar-lbl">1 ★</span><div class="rev-bar-track"><div class="rev-bar-fill" style="width:0%"></div></div><span class="rev-bar-cnt">2</span></div>
+    </div>
+  </div>
+  <div class="rev-grid">
+    <div class="rev-card fade">
+      <div class="rev-hdr"><div><div class="rev-name">Carlos M.</div><div class="rev-city">📍 Medellín, Antioquia</div></div><div class="verified">✓ Compra verificada</div></div>
+      <div class="rev-stars">★★★★★</div>
+      <p class="rev-txt">"Trabajo en construcción y son las mejores que he tenido. El cuero nubuck es de verdad — no se rayan ni manchan fácil. Después de 6 meses siguen como nuevas."</p>
+    </div>
+    <div class="rev-card fade">
+      <div class="rev-hdr"><div><div class="rev-name">Andrés R.</div><div class="rev-city">📍 Bogotá, Cundinamarca</div></div><div class="verified">✓ Compra verificada</div></div>
+      <div class="rev-stars">★★★★★</div>
+      <p class="rev-txt">"La suela tiene un agarre brutal en barro. Las uso en obra en temporada de lluvias y no he resbalado ni una sola vez. Y llegaron rapidísimo a Bogotá, pagué al recibir."</p>
+    </div>
+    <div class="rev-card fade">
+      <div class="rev-hdr"><div><div class="rev-name">Lorena V.</div><div class="rev-city">📍 Cali, Valle del Cauca</div></div><div class="verified">✓ Compra verificada</div></div>
+      <div class="rev-stars">★★★★★</div>
+      <p class="rev-txt">"Soy ingeniera de campo y las uso tanto en obra como en reuniones. Son cómodas y se ven muy bien. El cuello acolchado hace toda la diferencia en jornadas largas."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECCIÓN FORMULARIO DE PEDIDO
+     ══════════════════════════════════════════ -->
+<section id="pedidoForm" style="background:var(--dk);padding:60px 20px;border-top:3px solid var(--y)">
+  <div style="max-width:680px;margin:0 auto">
+
+    <!-- Header -->
+    <div class="sec-hdr fade">
+      <div class="sec-tag">🛒 Pedido directo</div>
+      <h2 class="sec-title">¿Lista para las tuyas?<br>Pide aquí en 2 minutos</h2>
+      <p class="sec-sub">Llena tus datos y te generamos el mensaje listo — solo das "Enviar" en WhatsApp</p>
+    </div>
+
+    <!-- Mini product card -->
+    <div class="fade" style="background:var(--card);border:1px solid var(--bdr);border-radius:16px;padding:16px 18px;margin-bottom:28px;display:flex;align-items:center;gap:15px">
+      <div style="width:72px;height:72px;border-radius:10px;overflow:hidden;background:#111;flex-shrink:0">
+        <img src="oferta-principal.png" style="width:100%;height:100%;object-fit:contain" alt="TIMBERLAND DE LUJO" loading="lazy">
+      </div>
+      <div style="flex:1;min-width:0">
+        <div style="font-size:17px;font-weight:900;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">TIMBERLAND DE LUJO</div>
+        <div style="font-size:12px;color:var(--muted);margin-bottom:5px">Calzado industrial · Piel Nubuck</div>
+        <div style="display:flex;align-items:baseline;gap:10px">
+          <span style="font-size:22px;font-weight:900;color:var(--y)">$160.000</span>
+          <span style="font-size:12px;color:var(--muted);text-decoration:line-through">$225.000</span>
+        </div>
+      </div>
+      <div style="font-size:10px;color:var(--ok);font-weight:800;background:rgba(0,200,81,.1);border:1px solid rgba(0,200,81,.2);padding:5px 10px;border-radius:7px;white-space:nowrap;flex-shrink:0">✓ Envío<br>gratis</div>
+    </div>
+
+    <!-- FORMULARIO -->
+    <form id="mainOrderForm" onsubmit="submitMainForm(event)" novalidate>
+
+      <!-- Paso 1: Agrega tus pares -->
+      <div class="fade" style="background:var(--card);border:1px solid var(--bdr);border-radius:14px;padding:18px 20px;margin-bottom:14px">
+        <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--y);margin-bottom:14px">1 · Agrega los pares que quieres</div>
+
+        <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.8px;margin-bottom:8px">Talla</div>
+        <div id="mfSzWarn" style="display:none;font-size:12px;color:var(--red);margin-bottom:8px;font-weight:700">⚠️ Selecciona una talla primero</div>
+        <div style="display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px">
+          <button type="button" class="sz-btn mf-sz" onclick="mfPickSz(this)">37</button>
+          <button type="button" class="sz-btn mf-sz" onclick="mfPickSz(this)">38</button>
+          <button type="button" class="sz-btn mf-sz" onclick="mfPickSz(this)">39</button>
+          <button type="button" class="sz-btn mf-sz" onclick="mfPickSz(this)">40</button>
+          <button type="button" class="sz-btn mf-sz" onclick="mfPickSz(this)">41</button>
+          <button type="button" class="sz-btn mf-sz" onclick="mfPickSz(this)">42</button>
+          <button type="button" class="sz-btn mf-sz" onclick="mfPickSz(this)">43</button>
+          <button type="button" class="sz-btn mf-sz" onclick="mfPickSz(this)">44</button>
+        </div>
+
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
+          <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.8px;white-space:nowrap">Cant.</div>
+          <div class="qty-ctrl" style="border-radius:10px;flex-shrink:0">
+            <button type="button" onclick="mfQtyChange(-1)" style="padding:5px 13px;font-size:20px">−</button>
+            <span id="mfQtyVal" style="padding:0 10px;font-size:16px;min-width:26px;text-align:center">1</span>
+            <button type="button" onclick="mfQtyChange(1)" style="padding:5px 13px;font-size:20px">+</button>
+          </div>
+          <button type="button" onclick="mfAddPair()" style="flex:1;padding:12px 10px;background:rgba(230,180,80,.12);border:1.5px solid rgba(230,180,80,.45);border-radius:10px;color:var(--y);font-size:13px;font-weight:800;cursor:pointer;transition:all .2s;white-space:nowrap">＋ Agregar par</button>
+        </div>
+
+        <!-- Lista de pares añadidos -->
+        <div id="mfPairsList" style="display:none;border-top:1px solid var(--bdr);padding-top:12px;margin-top:4px">
+          <div id="mfPairsItems"></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding-top:10px;margin-top:6px;border-top:1px solid var(--bdr)">
+            <span style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;font-weight:700">Total del pedido</span>
+            <span id="mfGrandTotal" style="font-size:24px;font-weight:900;color:#fff">$0</span>
+          </div>
+        </div>
+
+        <a class="sz-link" onclick="goToSizes()" style="font-size:11px;display:inline-block;margin-top:12px">📏 Ver guía de tallas</a>
+      </div>
+
+      <!-- Paso 3: Datos del cliente -->
+      <div class="fade" style="background:var(--card);border:1px solid var(--bdr);border-radius:14px;padding:18px 20px;margin-bottom:20px">
+        <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--y);margin-bottom:18px">3 · Tus datos de entrega</div>
+
+        <div class="form-field">
+          <label>Nombre completo <span style="color:var(--red)">*</span></label>
+          <input class="form-input" type="text" id="mfNombre" placeholder="Ej: Juan Pérez"
+            required autocomplete="name" inputmode="text">
+        </div>
+        <div class="form-field">
+          <label>Teléfono / WhatsApp <span style="color:var(--red)">*</span></label>
+          <input class="form-input" type="tel" id="mfTel" placeholder="Ej: 3001234567"
+            required autocomplete="tel" inputmode="numeric" maxlength="15">
+        </div>
+        <div class="form-field">
+          <label>Ciudad <span style="color:var(--red)">*</span></label>
+          <input class="form-input" type="text" id="mfCiudad" placeholder="Ej: Medellín, Bogotá, Cali…"
+            required autocomplete="address-level2" inputmode="text">
+        </div>
+        <div class="form-field">
+          <label>Dirección de entrega <span style="color:var(--red)">*</span></label>
+          <input class="form-input" type="text" id="mfDir" placeholder="Calle, número, barrio, apartamento…"
+            required autocomplete="street-address" inputmode="text">
+        </div>
+        <div class="form-field">
+          <label>Observaciones <span style="color:var(--muted);font-weight:400;font-size:10px">(opcional)</span></label>
+          <textarea class="form-input" id="mfObs" placeholder="Indicaciones para el mensajero…" style="resize:none;min-height:65px;line-height:1.5"></textarea>
+        </div>
+        <p class="form-req-note"><span style="color:var(--red)">*</span> Campos obligatorios</p>
+      </div>
+
+      <!-- Botón confirmar -->
+      <button type="submit" class="btn-confirm fade" style="font-size:17px;padding:19px;margin-bottom:13px">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        CONFIRMAR PEDIDO POR WHATSAPP
+      </button>
+      <p class="pay-note">🔒 Tus datos son seguros &nbsp;·&nbsp; 💵 Pagas al recibir &nbsp;·&nbsp; 📦 Envío gratis</p>
+
+    </form>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section class="faq-sec">
+  <div class="faq-wrap">
+    <div class="sec-hdr fade">
+      <div class="sec-tag">❓ Preguntas frecuentes</div>
+      <h2 class="sec-title">Todo lo que necesitas saber</h2>
+    </div>
+    <div class="faq-item fade">
+      <button class="faq-q" onclick="togFaq(this)">¿Cuánto tarda el envío? <span class="faq-ico">+</span></button>
+      <div class="faq-a"><p>Despachamos en 24 horas hábiles. Entrega en 2-5 días en ciudades principales (Bogotá, Medellín, Cali, Barranquilla) y 3-7 días en municipios. Recibes número de guía para rastrear tu pedido en tiempo real.</p></div>
+    </div>
+    <div class="faq-item fade">
+      <button class="faq-q" onclick="togFaq(this)">¿Puedo pagar contra entrega? <span class="faq-ico">+</span></button>
+      <div class="faq-a"><p>¡Sí! Trabajamos con contraentrega a todo Colombia. Solo pagas cuando el mensajero llegue a tu puerta. Aceptamos efectivo, Nequi y Daviplata al momento de la entrega.</p></div>
+    </div>
+    <div class="faq-item fade">
+      <button class="faq-q" onclick="togFaq(this)">¿Qué pasa si me llega defectuosa o no me queda? <span class="faq-ico">+</span></button>
+      <div class="faq-a"><p>Tienes 30 días para solicitar cambio o devolución sin costo si el producto tiene un defecto de fábrica. Para cambio de talla, el producto debe estar sin uso y con sus etiquetas. Contáctanos por WhatsApp y lo gestionamos de inmediato.</p></div>
+    </div>
+    <div class="faq-item fade">
+      <button class="faq-q" onclick="togFaq(this)">¿Las botas son resistentes al agua? <span class="faq-ico">+</span></button>
+      <div class="faq-a"><p>Sí. Los materiales de la TIMBERLAND DE LUJO están tratados para resistir la humedad y el desgaste. La piel nubuck y la suela de goma forman una barrera protectora contra el agua, el barro y sustancias líquidas comunes en obra.</p></div>
+    </div>
+    <div class="faq-item fade">
+      <button class="faq-q" onclick="togFaq(this)">¿Cómo sé qué talla pedir? <span class="faq-ico">+</span></button>
+      <div class="faq-a"><p>Consulta nuestra tabla de tallas arriba y mide tu pie al final del día. Si estás entre dos tallas, elige la más grande — el calzado industrial se usa con calcetines gruesos y necesitas espacio para mover los dedos con comodidad.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FINAL CTA ── -->
+<section class="final-cta">
+  <div class="final-inner">
+    <div class="offer-pill" style="margin-bottom:14px">🔥 Última oportunidad</div>
+    <h2 class="final-title">¿Sigues dudando? Tu pie no puede esperar.</h2>
+    <p class="final-sub">Más de <span data-count="2500">2.500</span> trabajadores ya eligieron la TIMBERLAND DE LUJO. Únete y trabaja con confianza desde el primer día.</p>
+    <div class="final-btns">
+      <button class="btn-main" onclick="document.getElementById('pedidoForm').scrollIntoView({behavior:'smooth'})">📋 HACER MI PEDIDO AHORA</button>
+      <a class="btn-wa" href="javascript:doOrder()" style="display:flex;align-items:center;justify-content:center;gap:9px;text-decoration:none">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Comprar directo por WhatsApp
+      </a>
+    </div>
+    <p class="final-note">🔒 Compra segura &nbsp;·&nbsp; 🚚 Envío gratis Colombia &nbsp;·&nbsp; 💵 Pagas al recibir &nbsp;·&nbsp; 🛡️ Garantía 3 meses</p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     POPUP 1 — TIEMPO (12 segundos)
+     Oferta flash con precio grande
+     ══════════════════════════════════════════ -->
+<div class="pop-overlay" id="pop1">
+  <div class="pop-box">
+    <button class="pop-close" onclick="closePop('pop1')">✕</button>
+    <div class="pop-ribbon">🔥 &nbsp;OFERTA DEL DÍA · PRECIO ESPECIAL&nbsp; 🔥</div>
+    <div class="pop-body">
+      <div class="pop-flame">🥾</div>
+      <h2 class="pop-headline">¡HOY LLEVAS LAS<br><span>TIMBERLAND DE LUJO</span><br>AL MEJOR PRECIO!</h2>
+      <div class="pop-price-old">Precio normal $225.000</div>
+      <div class="pop-price">$160.000</div>
+      <div class="pop-save">✅ &nbsp;Ahorras $65.000 &nbsp;·&nbsp; Envío GRATIS</div>
+      <div class="pop-bar-wrap">
+        <div class="pop-bar-lbl">⚡ Stock disponible hoy</div>
+        <div class="pop-bar"><div class="pop-bar-fill" style="width:26%"></div></div>
+        <div class="pop-bar-pct">¡Solo quedan unas pocas unidades!</div>
+      </div>
+      <button class="pop-btn-main" onclick="closePop('pop1');document.querySelector('.sz-grid').scrollIntoView({behavior:'smooth'})">🛒 QUIERO LAS MÍAS AHORA</button>
+      <button class="pop-btn-skip" onclick="closePop('pop1')">No, prefiero pagar más después</button>
+      <p class="pop-note">💵 Pagas al recibir &nbsp;·&nbsp; 📦 Despacho 24–48 h &nbsp;·&nbsp; 🛡️ Garantía 3 meses</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     POPUP 2 — SCROLL (65 % de la página)
+     Urgencia de stock, variante roja
+     ══════════════════════════════════════════ -->
+<div class="pop-overlay" id="pop2">
+  <div class="pop-box red-variant">
+    <button class="pop-close" onclick="closePop('pop2')">✕</button>
+    <div class="pop-ribbon">🚨 &nbsp;¡ALERTA DE STOCK!&nbsp; 🚨</div>
+    <div class="pop-body">
+      <div class="pop-flame">⚠️</div>
+      <h2 class="pop-headline">¡SE ESTÁN<br><span style="color:var(--red)">AGOTANDO</span><br>RÁPIDO!</h2>
+      <div class="pop-price-old">De $225.000 →</div>
+      <div class="pop-price">$160.000</div>
+      <div class="pop-save" style="background:rgba(255,59,59,.15);color:var(--red)">🔴 &nbsp;74 % del stock vendido hoy</div>
+      <div class="pop-bar-wrap" style="border-color:rgba(255,59,59,.3)">
+        <div class="pop-bar-lbl">Unidades disponibles</div>
+        <div class="pop-bar"><div class="pop-bar-fill" style="width:26%;background:linear-gradient(90deg,var(--red),#ff7b7b)"></div></div>
+        <div class="pop-bar-pct" style="color:var(--red)">¡Solo el 26 % disponible!</div>
+      </div>
+      <button class="pop-btn-main" onclick="closePop('pop2');document.getElementById('cartDrawer').classList.add('open');document.getElementById('cartOverlay').classList.add('open')">🛒 ASEGURAR MI TALLA YA</button>
+      <button class="pop-btn-skip" onclick="closePop('pop2')">Probaré suerte más tarde</button>
+      <p class="pop-note">💵 Sin adelanto · Pagas al recibir &nbsp;·&nbsp; 📦 Envío a todo Colombia</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     POPUP 3 — EXIT INTENT
+     Retención final, variante WhatsApp
+     ══════════════════════════════════════════ -->
+<div class="pop-overlay" id="pop3">
+  <div class="pop-box wa-variant">
+    <button class="pop-close" onclick="closePop('pop3')">✕</button>
+    <div class="pop-ribbon">👋 &nbsp;¡ESPERA! ANTES DE IRTE…&nbsp; 👋</div>
+    <div class="pop-body">
+      <div class="pop-flame">💬</div>
+      <h2 class="pop-headline">¿DUDAS?<br><span>ESCRÍBENOS</span><br>AHORA GRATIS</h2>
+      <p style="font-size:15px;color:var(--muted);margin-bottom:16px;line-height:1.6">Un asesor te ayuda a elegir tu talla y confirma el precio de <strong style="color:#fff">$160.000</strong> con envío gratis.</p>
+      <div class="pop-price" style="font-size:38px;color:#fff;margin-bottom:4px">$160.000</div>
+      <div class="pop-save" style="background:rgba(37,211,102,.12);color:#25D366">✅ &nbsp;Precio confirmado · Sin adelantos</div>
+      <br>
+      <button class="pop-btn-main" onclick="closePop('pop3');window.open('https://wa.me/573134379721?text='+encodeURIComponent('Hola TITAN BOTAS! Estaba viendo las TIMBERLAND DE LUJO y tengo una pregunta antes de pedir.'),'_blank')">
+        <svg style="vertical-align:middle;margin-right:6px" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        HABLAR CON UN ASESOR
+      </button>
+      <button class="pop-btn-skip" onclick="closePop('pop3')">No gracias, me voy sin mis botas</button>
+      <p class="pop-note">🔒 Atención personalizada &nbsp;·&nbsp; Respuesta inmediata &nbsp;·&nbsp; Sin compromiso</p>
+    </div>
+  </div>
+</div>
+
+<!-- ── CART OVERLAY ── -->
+<div id="cartOverlay" class="cart-overlay" onclick="closeCart()"></div>
+
+<!-- ── CART DRAWER ── -->
+<div id="cartDrawer" class="cart-drawer">
+
+  <!-- PANEL 1: CARRITO -->
+  <div id="cartPanel1" class="cart-panel">
+    <div class="cart-hdr">
+      <h3>🛒 Tu carrito</h3>
+      <button class="cart-close-btn" onclick="closeCart()">✕</button>
+    </div>
+    <div class="cart-body" id="cartItems">
+      <div class="cart-empty-msg">Tu carrito está vacío.<br>Selecciona una talla y agrégala.</div>
+    </div>
+    <div class="cart-ftr">
+      <div class="cart-total-row">
+        <span class="cart-total-lbl">Total del pedido</span>
+        <span class="cart-total-val" id="cartTotal">$0</span>
+      </div>
+      <button class="btn-checkout" onclick="goToForm()">
+        📦 Continuar con datos de entrega
+      </button>
+      <p class="cart-ftr-note">💵 Pagas al recibir &nbsp;·&nbsp; 🚚 Envío gratis</p>
+    </div>
+  </div>
+
+  <!-- PANEL 2: FORMULARIO DE ENTREGA -->
+  <div id="cartPanel2" class="cart-panel hidden">
+    <div class="cart-hdr">
+      <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
+        <button class="cart-back-btn" onclick="backToCart()">←</button>
+        <div>
+          <div class="cart-step-tag">Paso 2 de 2</div>
+          <h3 style="font-size:15px;margin:0">📦 Datos de entrega</h3>
+        </div>
+      </div>
+      <button class="cart-close-btn" onclick="closeCart()">✕</button>
+    </div>
+
+    <div class="form-scroll">
+      <!-- Resumen del pedido -->
+      <div class="form-summary" id="formSummary"></div>
+
+      <!-- Formulario -->
+      <form id="orderForm" onsubmit="submitOrder(event)" novalidate>
+        <div class="form-section-lbl">¿A quién le enviamos?</div>
+
+        <div class="form-field">
+          <label>Nombre completo<span>*</span></label>
+          <input class="form-input" type="text" id="fNombre" name="nombre"
+            placeholder="Ej: Juan Pérez" required autocomplete="name"
+            inputmode="text">
+        </div>
+
+        <div class="form-field">
+          <label>Teléfono / WhatsApp<span>*</span></label>
+          <input class="form-input" type="tel" id="fTel" name="telefono"
+            placeholder="Ej: 3001234567" required autocomplete="tel"
+            inputmode="numeric" maxlength="15">
+        </div>
+
+        <div class="form-section-lbl">¿A dónde lo enviamos?</div>
+
+        <div class="form-field">
+          <label>Ciudad<span>*</span></label>
+          <input class="form-input" type="text" id="fCiudad" name="ciudad"
+            placeholder="Ej: Medellín, Bogotá, Cali…" required
+            autocomplete="address-level2" inputmode="text">
+        </div>
+
+        <div class="form-field">
+          <label>Dirección completa<span>*</span></label>
+          <input class="form-input" type="text" id="fDir" name="direccion"
+            placeholder="Calle, número, barrio, apartamento…" required
+            autocomplete="street-address" inputmode="text">
+        </div>
+
+        <div class="form-field">
+          <label>Observaciones <span style="color:var(--muted);font-weight:400;font-size:10px">(opcional)</span></label>
+          <textarea class="form-input" id="fObs" name="obs"
+            placeholder="Indicaciones para el mensajero, referencia del lugar…"></textarea>
+        </div>
+
+        <p class="form-req-note"><span style="color:var(--red)">*</span> Campos obligatorios</p>
+      </form>
+    </div>
+
+    <div class="cart-ftr">
+      <button class="btn-confirm" onclick="document.getElementById('orderForm').requestSubmit()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        CONFIRMAR PEDIDO POR WHATSAPP
+      </button>
+      <p class="cart-ftr-note">✅ Tu asesor recibe el pedido y confirma disponibilidad</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- ── TOAST ── -->
+<div id="toast" class="toast"></div>
+
+<!-- ── STICKY MOBILE ── -->
+<div class="sticky" id="stickyBar">
+  <div class="sticky-price">$160.000</div>
+  <button class="sticky-btn" onclick="document.getElementById('pedidoForm').scrollIntoView({behavior:'smooth'})">📋 PEDIR AHORA</button>
+  <a href="javascript:doOrder()" class="sticky-btn" style="background:#25D366;flex:0 0 auto;padding:13px 15px;text-decoration:none;display:flex;align-items:center;justify-content:center">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+<!-- ── WA FLOAT ── -->
+<a class="wa-float" href="https://wa.me/573134379721" target="_blank">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">TITAN <span>BOTAS</span></div>
+    <div class="footer-links">
+      <a href="#">Términos y Condiciones</a>
+      <a href="#">Política de Privacidad</a>
+      <a href="#">Política de Devoluciones</a>
+      <a href="https://wa.me/573134379721" target="_blank">Contacto WhatsApp</a>
+    </div>
+    <div class="footer-copy">© 2025 TITAN BOTAS · Calzado Industrial · Colombia · Todos los derechos reservados</div>
+  </div>
+</footer>
+
+<script>
+// ── CART ──
+var cart=[];
+var PRICE=145000;
+
+function addToCart(){
+  var sel=document.querySelector('.sz-btn.sel');
+  if(!sel){showToast('⚠️ Selecciona una talla primero');return;}
+  var sz=sel.textContent.trim();
+  var existing=cart.find(function(i){return i.size===sz});
+  if(existing){existing.qty++;}
+  else{cart.push({size:sz,qty:1,price:PRICE});}
+  renderCart();
+  openCart();
+  showToast('✓ Talla '+sz+' agregada al carrito');
+}
+
+function removeFromCart(sz){
+  cart=cart.filter(function(i){return i.size!==sz});
+  renderCart();
+}
+
+function updateQty(sz,delta){
+  var item=cart.find(function(i){return i.size===sz});
+  if(!item)return;
+  item.qty+=delta;
+  if(item.qty<=0)removeFromCart(sz);
+  else renderCart();
+}
+
+function renderCart(){
+  var list=document.getElementById('cartItems');
+  var totalVal=document.getElementById('cartTotal');
+  var total=0,count=0;
+
+  if(cart.length===0){
+    list.innerHTML='<div class="cart-empty-msg">Tu carrito está vacío.<br>Selecciona una talla y agrégala.</div>';
+    if(totalVal)totalVal.textContent='$0';
+    return;
+  }
+
+  var html='';
+  cart.forEach(function(item){
+    var sub=item.price*item.qty;
+    total+=sub; count+=item.qty;
+    html+='<div class="cart-item">'+
+      '<div class="cart-item-l">'+
+        '<span class="cart-sz">Talla '+item.size+'</span>'+
+        '<span class="cart-pname">TIMBERLAND DE LUJO</span>'+
+      '</div>'+
+      '<div class="cart-item-r">'+
+        '<div class="qty-ctrl">'+
+          '<button onclick="updateQty(\''+item.size+'\',-1)">−</button>'+
+          '<span>'+item.qty+'</span>'+
+          '<button onclick="updateQty(\''+item.size+'\',1)">+</button>'+
+        '</div>'+
+        '<span class="cart-itm-price">$'+formatNum(sub)+'</span>'+
+        '<button class="cart-rm" onclick="removeFromCart(\''+item.size+'\')">✕</button>'+
+      '</div>'+
+    '</div>';
+  });
+  list.innerHTML=html;
+  if(totalVal)totalVal.textContent='$'+formatNum(total);
+}
+
+function formatNum(n){
+  return n.toLocaleString('es-CO');
+}
+
+function openCart(){
+  document.getElementById('cartDrawer').classList.add('open');
+  document.getElementById('cartOverlay').classList.add('open');
+}
+
+function closeCart(){
+  document.getElementById('cartDrawer').classList.remove('open');
+  document.getElementById('cartOverlay').classList.remove('open');
+  // Siempre volver al panel 1 al cerrar
+  document.getElementById('cartPanel1').classList.remove('hidden');
+  document.getElementById('cartPanel2').classList.add('hidden');
+}
+
+function goToForm(){
+  if(cart.length===0){showToast('⚠️ Selecciona una talla primero');return;}
+  // Construir resumen en el formulario
+  var total=0,html='<div class="form-summary-title">📋 Resumen de tu pedido</div>';
+  cart.forEach(function(item){
+    var sub=item.price*item.qty;total+=sub;
+    html+='<div class="form-summary-line">🥾 Talla <strong>'+item.size+'</strong> × '+item.qty+' = <strong>$'+formatNum(sub)+'</strong></div>';
+  });
+  html+='<div class="form-summary-total">Total a pagar: $'+formatNum(total)+'</div>';
+  document.getElementById('formSummary').innerHTML=html;
+  document.getElementById('cartPanel1').classList.add('hidden');
+  document.getElementById('cartPanel2').classList.remove('hidden');
+  // Hacer scroll al tope del form
+  var fs=document.querySelector('.form-scroll');if(fs)fs.scrollTop=0;
+}
+
+function backToCart(){
+  document.getElementById('cartPanel2').classList.add('hidden');
+  document.getElementById('cartPanel1').classList.remove('hidden');
+}
+
+function submitOrder(e){
+  e.preventDefault();
+  var nombre=document.getElementById('fNombre').value.trim();
+  var tel=document.getElementById('fTel').value.trim();
+  var ciudad=document.getElementById('fCiudad').value.trim();
+  var dir=document.getElementById('fDir').value.trim();
+  var obs=document.getElementById('fObs').value.trim();
+  // Validación básica con feedback visual
+  var first=null;
+  [['fNombre',nombre],['fTel',tel],['fCiudad',ciudad],['fDir',dir]].forEach(function(pair){
+    var el=document.getElementById(pair[0]);
+    if(!pair[1]){
+      el.style.borderColor='var(--red)';
+      if(!first)first=el;
+    } else {
+      el.style.borderColor='var(--ok)';
+    }
+  });
+  if(first){first.focus();showToast('⚠️ Completa los campos obligatorios');return;}
+  var lines=['Hola TITAN BOTAS! Quiero hacer el siguiente pedido:',''];
+  var total=0;
+  cart.forEach(function(item){
+    var sub=item.price*item.qty;total+=sub;
+    lines.push('• TIMBERLAND DE LUJO — Talla '+item.size+' × '+item.qty+' unidad'+(item.qty>1?'es':'')+' = $'+formatNum(sub));
+  });
+  lines.push('');
+  lines.push('💰 TOTAL: $'+formatNum(total));
+  lines.push('');
+  lines.push('📦 DATOS DE ENTREGA:');
+  lines.push('👤 Nombre: '+nombre);
+  lines.push('📱 Teléfono: '+tel);
+  lines.push('🏙️ Ciudad: '+ciudad);
+  lines.push('📍 Dirección: '+dir);
+  if(obs)lines.push('📝 Nota: '+obs);
+  lines.push('');
+  lines.push('¿Confirman disponibilidad y proceden con el envío?');
+  // Guardar el pedido en Firestore (en segundo plano)
+  if(window.guardarPedido){
+    window.guardarPedido({
+      tipo:'carrito',
+      producto:'TIMBERLAND DE LUJO',
+      nombre:nombre, telefono:tel, ciudad:ciudad, direccion:dir, observaciones:obs,
+      pedido: cart.map(function(i){return {talla:i.size, cantidad:i.qty, precio:i.price};}),
+      total: total
+    });
+  }
+  window.open('https://wa.me/573134379721?text='+encodeURIComponent(lines.join('\n')),'_blank');
+  // Limpiar después de enviar
+  cart=[];renderCart();
+  document.getElementById('orderForm').reset();
+  document.querySelectorAll('.form-input').forEach(function(i){i.style.borderColor='';});
+  backToCart();closeCart();
+  showToast('✅ ¡Pedido enviado por WhatsApp!');
+}
+
+function showToast(msg){
+  var t=document.getElementById('toast');
+  t.textContent=msg;
+  t.classList.add('show');
+  setTimeout(function(){t.classList.remove('show');},2600);
+}
+
+// ── COUNTDOWN
+(function(){
+  var end=Date.now()+(5*3600+42*60+18)*1000;
+  function tick(){
+    var d=end-Date.now(),h,m,s;
+    if(d<0)d=0;
+    h=Math.floor(d/3600000);m=Math.floor((d%3600000)/60000);s=Math.floor((d%60000)/1000);
+    document.getElementById('hrs').textContent=String(h).padStart(2,'0');
+    document.getElementById('mns').textContent=String(m).padStart(2,'0');
+    document.getElementById('scs').textContent=String(s).padStart(2,'0');
+  }
+  tick();setInterval(tick,1000);
+})();
+
+// GALLERY
+var imgs=['oferta-principal.png','calle-lifestyle.png','durabilidad.png','urbano-lifestyle.png'];
+function selThumb(idx){
+  document.querySelectorAll('.thumb').forEach(function(t,i){t.classList.toggle('active',i===idx)});
+  var main=document.getElementById('activeImg');
+  var ph=document.getElementById('ph-main');
+  main.src=imgs[idx];
+  main.style.display='block';
+  if(ph)ph.style.display='none';
+}
+
+// SIZE PICK
+function pickSz(btn){
+  document.querySelectorAll('.sz-btn').forEach(function(b){b.classList.remove('sel')});
+  btn.classList.add('sel');
+}
+
+// FAQ
+function togFaq(btn){
+  var item=btn.parentElement;
+  var open=item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open')});
+  if(!open)item.classList.add('open');
+}
+
+// ORDER
+function doOrder(){
+  var sel=document.querySelector('.sz-btn.sel');
+  if(!sel){alert('⚠️ Por favor selecciona tu talla antes de continuar.');return;}
+  var sz=sel.textContent;
+  var msg=encodeURIComponent('Hola TITAN BOTAS! Quiero pedir las TIMBERLAND DE LUJO en talla '+sz+'. ¿Cómo procedo?');
+  window.open('https://wa.me/573134379721?text='+msg,'_blank');
+}
+
+// SCROLL TO SIZES
+function goToSizes(){document.getElementById('sizeChart').scrollIntoView({behavior:'smooth'})}
+
+// FADE IN con stagger por grupos de grid
+['.feat-grid','.accion-uniform','.rev-grid','.trust-grid','.showcase-grid'].forEach(function(sel){
+  var parent=document.querySelector(sel);
+  if(!parent)return;
+  parent.children&&Array.from(parent.children).forEach(function(el,i){
+    el.style.transitionDelay=(i*0.09)+'s';
+  });
+});
+var obs=new IntersectionObserver(function(e){
+  e.forEach(function(x){if(x.isIntersecting)x.target.classList.add('vis')});
+},{threshold:0.08});
+document.querySelectorAll('.fade').forEach(function(el){obs.observe(el)});
+
+// CONTADOR animado (sube desde 0 hasta data-count)
+var obsCount=new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
+    if(!entry.isIntersecting)return;
+    var el=entry.target;
+    var target=parseInt(el.dataset.count,10);
+    var start=performance.now(),dur=1400;
+    (function tick(now){
+      var ease=1-Math.pow(1-Math.min((now-start)/dur,1),3);
+      el.textContent=Math.round(ease*target).toLocaleString('es-CO');
+      if(ease<1)requestAnimationFrame(tick);
+    })(start);
+    obsCount.unobserve(el);
+  });
+},{threshold:0.5});
+document.querySelectorAll('[data-count]').forEach(function(el){obsCount.observe(el);});
+
+// PARALLAX lifestyle (solo desktop, pasivo para no bloquear scroll)
+var lifeImg=document.querySelector('.lifestyle-div img');
+if(lifeImg&&window.innerWidth>768){
+  window.addEventListener('scroll',function(){
+    var rect=lifeImg.parentElement.getBoundingClientRect();
+    if(rect.bottom>0&&rect.top<window.innerHeight)
+      lifeImg.style.transform='translateY('+Math.round((rect.top/window.innerHeight)*38)+'px) scale(1.09)';
+  },{passive:true});
+}
+
+// ── FORMULARIO PRINCIPAL ──
+var mfSz=null;
+var mfQty=1;
+var mfPairs=[];
+
+function mfPickSz(btn){
+  document.querySelectorAll('.mf-sz').forEach(function(b){b.classList.remove('sel')});
+  btn.classList.add('sel');
+  mfSz=btn.textContent.trim();
+  document.getElementById('mfSzWarn').style.display='none';
+}
+
+function mfQtyChange(delta){
+  mfQty=Math.max(1,mfQty+delta);
+  document.getElementById('mfQtyVal').textContent=mfQty;
+}
+
+function mfAddPair(){
+  if(!mfSz){
+    document.getElementById('mfSzWarn').style.display='block';
+    showToast('⚠️ Selecciona una talla primero');
+    return;
+  }
+  var sz=mfSz, qty=mfQty;
+  var existing=mfPairs.find(function(p){return p.sz===sz});
+  if(existing){existing.qty+=qty;}
+  else{mfPairs.push({sz:sz,qty:qty});}
+  mfRenderPairs();
+  // Reset selector
+  document.querySelectorAll('.mf-sz').forEach(function(b){b.classList.remove('sel')});
+  mfSz=null; mfQty=1;
+  document.getElementById('mfQtyVal').textContent=1;
+  showToast('✓ Talla '+sz+' × '+qty+' agregada');
+}
+
+function mfRemovePair(sz){
+  mfPairs=mfPairs.filter(function(p){return p.sz!==sz});
+  mfRenderPairs();
+}
+
+function mfRenderPairs(){
+  var itemsEl=document.getElementById('mfPairsItems');
+  var listEl=document.getElementById('mfPairsList');
+  var totalEl=document.getElementById('mfGrandTotal');
+  if(mfPairs.length===0){listEl.style.display='none';return;}
+  listEl.style.display='block';
+  var total=0,html='';
+  mfPairs.forEach(function(p){
+    var sub=PRICE*p.qty; total+=sub;
+    html+='<div style="display:flex;align-items:center;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--bdr)">'+
+      '<span style="font-size:14px;color:#fff">Talla <strong style="color:var(--y)">'+p.sz+'</strong> &nbsp;×&nbsp; '+p.qty+' par'+(p.qty>1?'es':'')+'</span>'+
+      '<div style="display:flex;align-items:center;gap:10px">'+
+        '<span style="font-size:14px;font-weight:800;color:var(--y)">$'+formatNum(sub)+'</span>'+
+        '<button type="button" onclick="mfRemovePair(\''+p.sz+'\')" style="background:none;border:none;color:var(--muted);font-size:17px;cursor:pointer;padding:2px 5px;line-height:1;border-radius:5px;transition:color .15s" onmouseover="this.style.color=\'var(--red)\'" onmouseout="this.style.color=\'var(--muted)\'">✕</button>'+
+      '</div>'+
+    '</div>';
+  });
+  itemsEl.innerHTML=html;
+  totalEl.textContent='$'+formatNum(total);
+}
+
+async function submitMainForm(e){
+  e.preventDefault();
+  if(mfPairs.length===0){
+    document.getElementById('mfSzWarn').style.display='block';
+    document.getElementById('mfSzWarn').scrollIntoView({behavior:'smooth',block:'center'});
+    showToast('⚠️ Agrega al menos un par');
+    return;
+  }
+  var nombre=document.getElementById('mfNombre').value.trim();
+  var tel=document.getElementById('mfTel').value.trim();
+  var ciudad=document.getElementById('mfCiudad').value.trim();
+  var dir=document.getElementById('mfDir').value.trim();
+  var obs=document.getElementById('mfObs').value.trim();
+  var first=null;
+  [['mfNombre',nombre],['mfTel',tel],['mfCiudad',ciudad],['mfDir',dir]].forEach(function(pair){
+    var el=document.getElementById(pair[0]);
+    if(!pair[1]){el.style.borderColor='var(--red)';if(!first)first=el;}
+    else{el.style.borderColor='var(--ok)';}
+  });
+  if(first){first.focus();showToast('⚠️ Completa los campos obligatorios');return;}
+  var total=0;
+  var lines=['Hola TITAN BOTAS! Quiero hacer el siguiente pedido:',''];
+  mfPairs.forEach(function(p){
+    var sub=PRICE*p.qty; total+=sub;
+    lines.push('• TIMBERLAND DE LUJO — Talla '+p.sz+' × '+p.qty+' par'+(p.qty>1?'es':'')+' = $'+formatNum(sub));
+  });
+  lines.push('','💰 TOTAL: $'+formatNum(total),'','📦 DATOS DE ENTREGA:',
+    '👤 Nombre: '+nombre,'📱 Teléfono: '+tel,
+    '🏙️ Ciudad: '+ciudad,'📍 Dirección: '+dir);
+  if(obs)lines.push('📝 Nota: '+obs);
+  lines.push('','¿Confirman disponibilidad y proceden con el envío?');
+  // Guardar el pedido en Firestore antes de abrir WhatsApp
+  if(window.guardarPedido){
+    await window.guardarPedido({
+      tipo:'formulario_principal',
+      producto:'TIMBERLAND DE LUJO',
+      nombre:nombre, telefono:tel, ciudad:ciudad, direccion:dir, observaciones:obs,
+      pedido: mfPairs.map(function(p){return {talla:p.sz, cantidad:p.qty, precio:PRICE};}),
+      total: total
+    });
+  }
+  window.location.href='https://wa.me/573134379721?text='+encodeURIComponent(lines.join('\n'));
+}
+
+// ── POPUPS ──
+var popShown={pop1:false,pop2:false,pop3:false};
+
+function openPop(id){
+  if(popShown[id])return;
+  // No abrir si hay otro popup abierto
+  if(document.querySelector('.pop-overlay.show'))return;
+  popShown[id]=true;
+  document.getElementById(id).classList.add('show');
+  document.body.style.overflow='hidden';
+}
+
+function closePop(id){
+  document.getElementById(id).classList.remove('show');
+  document.body.style.overflow='';
+}
+
+// Cerrar con ESC
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape'){
+    ['pop1','pop2','pop3'].forEach(function(id){
+      document.getElementById(id).classList.remove('show');
+    });
+    document.body.style.overflow='';
+  }
+});
+
+// Cerrar al clic en el overlay (fuera del box)
+['pop1','pop2','pop3'].forEach(function(id){
+  document.getElementById(id).addEventListener('click',function(e){
+    if(e.target===this)closePop(id);
+  });
+});
+
+// POPUP 1 — tiempo: 12 segundos
+setTimeout(function(){openPop('pop1');},12000);
+
+// POPUP 2 — scroll: 65% de la página
+var pop2triggered=false;
+window.addEventListener('scroll',function(){
+  if(pop2triggered)return;
+  var scrolled=(window.scrollY+window.innerHeight)/document.body.scrollHeight;
+  if(scrolled>=0.65){
+    pop2triggered=true;
+    // Pequeño delay para no chocar con otros eventos
+    setTimeout(function(){openPop('pop2');},400);
+  }
+});
+
+// POPUP 3 — exit intent: mouse sale por arriba (solo desktop)
+var pop3triggered=false;
+document.addEventListener('mouseleave',function(e){
+  if(pop3triggered)return;
+  if(e.clientY<=0&&window.innerWidth>768){
+    pop3triggered=true;
+    openPop('pop3');
+  }
+});
+
+// ── STICKY
+var heroEl=document.querySelector('.hero');
+var stickyEl=document.getElementById('stickyBar');
+window.addEventListener('scroll',function(){
+  if(heroEl&&stickyEl)
+    stickyEl.style.display=heroEl.getBoundingClientRect().bottom<0?'flex':'none';
+},{passive:true});
+</script>
+<!-- ════════════ FIREBASE / FIRESTORE ════════════ -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+  import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDyzTKk0zpXUISyNBae2FJprptbLPWsknk",
+    authDomain: "titan-botas.firebaseapp.com",
+    projectId: "titan-botas",
+    storageBucket: "titan-botas.firebasestorage.app",
+    messagingSenderId: "730925861936",
+    appId: "1:730925861936:web:60dbfceec01b03d86671f5"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  // Guarda un pedido en Firestore (coleccion "pedidos").
+  // Devuelve una promesa que resuelve en <=4s pase lo que pase,
+  // para no bloquear el envio por WhatsApp si la red falla.
+  window.guardarPedido = function(data){
+    const guardar = addDoc(collection(db, "pedidos"), Object.assign({}, data, {
+      estado: "nuevo",
+      creado: serverTimestamp(),
+      origen: location.href,
+      navegador: navigator.userAgent
+    })).then(function(){ return true; })
+      .catch(function(err){ console.error("Pedido NO guardado en Firestore:", err); return false; });
+    const limite = new Promise(function(res){ setTimeout(function(){ res("timeout"); }, 4000); });
+    return Promise.race([guardar, limite]);
+  };
+</script>
+
+</body>
+</html>
