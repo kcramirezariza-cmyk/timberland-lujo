@@ -14,11 +14,11 @@
   durabilidad.png                    → Botas en mesa de taller
   estilo-industrial.png                    → ¡PAGAS AL RECIBIR!
   estilo-industrial.png                     → RESISTENCIA EXTREMA (mina)
-  oferta-principal.png                     → ¡OFERTA IMPERDIBLE! (producto)
+  detalle-bota.png                     → ¡OFERTA IMPERDIBLE! (producto)
   versatilidad.png                     → Mujer en obra al atardecer
   compra-segura.png                     → Imagen compuesta (features)
   confort-detalle.png     → CONFORT ERGONÓMICO (cuello)
-  detalle-bota.png     → PIEL NUBUCK (detalle cuero)
+  oferta-principal.png     → PIEL NUBUCK (detalle cuero)
   traccion-detalle.png     → TRACCIÓN EXTREMA (suela)
   detalles-grid.png     → Mujer calle urbana
   urbano-lifestyle.png      → Hombre con taladro
@@ -617,7 +617,7 @@ textarea.form-input{resize:none;min-height:70px;line-height:1.5}
     <div class="fade">
       <div class="main-img" id="mainImg">
         <div class="badge-pct">-29%</div>
-        <img src="oferta-principal.png" alt="TIMBERLAND DE LUJO" id="activeImg" onerror="this.style.display='none';document.getElementById('ph-main').style.display='flex'">
+        <img src="detalle-bota.png" alt="TIMBERLAND DE LUJO" id="activeImg" onerror="this.style.display='none';document.getElementById('ph-main').style.display='flex'">
         <div class="placeholder" id="ph-main" style="display:none">
           <svg width="100" height="100" viewBox="0 0 100 80" fill="none">
             <path d="M10 70 L10 35 Q10 22 22 22 L52 22 L52 40 Q52 52 62 52 L86 52 Q92 52 92 58 L92 70 Q92 76 86 76 L16 76 Q10 76 10 70Z" fill="#E6B450" opacity="0.15" stroke="#E6B450" stroke-width="1.8"/>
@@ -629,7 +629,7 @@ textarea.form-input{resize:none;min-height:70px;line-height:1.5}
       </div>
       <div class="thumbs">
         <div class="thumb active" onclick="selThumb(0)">
-          <img src="oferta-principal.png" alt="Vista 1" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'placeholder-t\'>1</div>'">
+          <img src="detalle-bota.png" alt="Vista 1" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'placeholder-t\'>1</div>'">
         </div>
         <div class="thumb" onclick="selThumb(1)">
           <img src="calle-lifestyle.png" alt="Vista 2" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'placeholder-t\'>2</div>'">
@@ -788,7 +788,7 @@ textarea.form-input{resize:none;min-height:70px;line-height:1.5}
         <img src="traccion-detalle.png" alt="Tracción Extrema - suela" loading="lazy" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'ph\'>Tracción Extrema</div>'">
       </div>
       <div class="showcase-img">
-        <img src="detalle-bota.png" alt="Piel Nubuck primera calidad" loading="lazy" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'ph\'>Piel Nubuck</div>'">
+        <img src="oferta-principal.png" alt="Piel Nubuck primera calidad" loading="lazy" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'ph\'>Piel Nubuck</div>'">
       </div>
       <div class="showcase-img">
         <img src="estilo-industrial.png" alt="Resistencia extrema cualquier terreno" loading="lazy" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'ph\'>Resistencia Extrema</div>'">
@@ -965,7 +965,7 @@ textarea.form-input{resize:none;min-height:70px;line-height:1.5}
     <!-- Mini product card -->
     <div class="fade" style="background:var(--card);border:1px solid var(--bdr);border-radius:16px;padding:16px 18px;margin-bottom:28px;display:flex;align-items:center;gap:15px">
       <div style="width:72px;height:72px;border-radius:10px;overflow:hidden;background:#111;flex-shrink:0">
-        <img src="oferta-principal.png" style="width:100%;height:100%;object-fit:contain" alt="TIMBERLAND DE LUJO" loading="lazy">
+        <img src="detalle-bota.png" style="width:100%;height:100%;object-fit:contain" alt="TIMBERLAND DE LUJO" loading="lazy">
       </div>
       <div style="flex:1;min-width:0">
         <div style="font-size:17px;font-weight:900;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">TIMBERLAND DE LUJO</div>
@@ -1496,7 +1496,7 @@ function showToast(msg){
 })();
 
 // GALLERY
-var imgs=['oferta-principal.png','calle-lifestyle.png','durabilidad.png','urbano-lifestyle.png'];
+var imgs=['detalle-bota.png','calle-lifestyle.png','durabilidad.png','urbano-lifestyle.png'];
 function selThumb(idx){
   document.querySelectorAll('.thumb').forEach(function(t,i){t.classList.toggle('active',i===idx)});
   var main=document.getElementById('activeImg');
@@ -1779,3 +1779,4 @@ window.addEventListener('scroll',function(){
 
 </body>
 </html>
+                                                                                                                                                                                                                                                
